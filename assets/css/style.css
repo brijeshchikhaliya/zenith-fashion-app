@@ -1,0 +1,212 @@
+/* GLOBAL VARIABLES */
+:root {
+  --body-background-color: #ffffff;
+  --text-color: #000000;
+  --primory-color: #222222;
+  --footer-background-color: #101010;
+  --secondary-color: #4e4e4e;
+  --font-allogist: Allogist;
+  --font-futura-bk-bt: Futura Bk BT;
+  --font-basic-comm-li-roman: BasicCommercial LT Roman;
+  --font-stay-wild: Stay Wild;
+  --font-futura: Futura;
+  --font-futura-md-bt: Futura Md BT;
+  --font-poppins: Poppins;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-background-color);
+}
+
+/* NAVBAR */
+
+.main-header {
+  width: 100%;
+}
+
+.header-sticky {
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  padding: 25px 30px;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  text-decoration: none;
+}
+
+.navbar-brand .logo-text {
+  font-size: 30px;
+  font-weight: 300;
+  font-family: var(--font-allogist);
+  color: var(--text-color);
+}
+
+.navbar-menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-menu li {
+  list-style-type: none;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 30px;
+  color: var(--text-color);
+  font-family: var(--font-futura-bk-bt);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.header-border-bottom {
+  border-bottom: 2px solid var(--text-color);
+  width: 100%;
+}
+
+/* WOMENS FASHION BANNER IMAGE CSS */
+.women-fashion-banner-section {
+  width: 100%;
+  height: auto;
+}
+
+.womens-fashion-banner-image {
+  width: 100%;
+  height: auto;
+}
+
+.womens-fashion-banner-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Womens Fashion Banner Marquee Section */
+
+.marquee-section {
+  margin-top: -45.6%;
+}
+
+.marquee-section marquee {
+  opacity: 80%;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--secondary-color);
+  background-color: var(--body-background-color);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+marquee p {
+  display: inline-block;
+  padding: 16px 50px;
+}
+
+marquee .marquee-border-right {
+  border-right: 1px solid var(--text-color);
+  height: 10px;
+  margin-top: 1%;
+}
+
+/* Banner Title Section */
+
+.fashion-banner-description-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 34.4%;
+}
+
+.fashion-banner-description-section p {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
+  color: var(--body-background-color);
+}
+
+.fashion-banner-description-section a {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--body-background-color);
+  background-color: var(--text-color);
+  opacity: 70%;
+  text-decoration: none;
+  padding: 15px 25px;
+  margin-top: 20px;
+}
+
+/* COLLECTION BANNER IMAGE */
+.collection-banner-section {
+  width: 100%;
+  height: auto;
+}
+
+.collection-banner-image {
+  width: 100%;
+  height: auto;
+}
+
+.collection-banner-image .collection-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Collection Banner Title */
+.collection-banner-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -7%;
+}
+
+.collection-banner-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection-image-heading p {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
+  color: var(--body-background-color);
+}
+
+.collection-banner-links {
+  padding: 0 10px;
+}
+
+.collection-banner-links a {
+  margin-top: 6%;
+  padding: 0 45px;
+  background-color: var(--text-color);
+  color: var(--body-background-color);
+  opacity: 70%;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
