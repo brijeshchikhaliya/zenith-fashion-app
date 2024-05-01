@@ -418,8 +418,8 @@ marquee .marquee-border-right {
 /* ADVERTIZE BLOG SECTION */
 .advertize-blog-section {
   width: 100%;
-  overflow-x: hidden;
   margin-top: 80px;
+  overflow: hidden;
 }
 
 .adv-blog-row {
@@ -435,6 +435,10 @@ marquee .marquee-border-right {
   width: 100%;
   height: auto;
   margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .fansy-summer-image {
@@ -538,4 +542,355 @@ marquee .marquee-border-right {
   margin-top: 12px;
   margin-left: -36px;
   color: var(--text-color);
+}
+
+/* LIFETIME JOURNEY BLOG SECTION */
+.journey-blog-section {
+  width: 100%;
+  margin-top: 200px;
+  background-color: var(--primory-color);
+  padding: 70px 0;
+}
+
+.journey-blog-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.heading-the-journey {
+  font-size: 58px;
+  font-weight: 400;
+  font-family: Futura Bk BT;
+  line-height: 63px;
+  color: var(--body-background-color);
+}
+
+.heading-journey-lifetime {
+  font-size: 58px;
+  font-weight: 700;
+  font-family: Futura Md BT;
+  line-height: 63px;
+  color: var(--body-background-color);
+}
+
+/* Journey Blog Description */
+.journey-blog-desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.journey-blog-description-text {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: Futura Bk BT;
+  line-height: 31px;
+  color: var(--body-background-color);
+}
+
+.journey-blog-action {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.journey-explore-now-button {
+  text-decoration: none;
+  border: 3px solid var(--body-background-color);
+  color: var(--body-background-color);
+  background-color: var(--primory-color);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 18px 55px 18px 15px;
+  border-radius: 3px;
+  font-family: Futura Bk BT;
+}
+
+.journey-blog-diamond-icon {
+  font-size: 26px;
+  margin-top: 13px;
+  margin-left: -36px;
+  color: var(--body-background-color);
+}
+
+/* Journey Blog Img */
+.journey-blog-image-section {
+  margin-top: 100px;
+}
+
+.journey-img-row {
+  display: flex;
+  flex-wrap: wrap row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.journey-box-content {
+  box-sizing: border-box;
+  border: 2px transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.journey-blog-img {
+  width: 100%;
+  height: auto;
+}
+
+.rico-img-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -25.9%;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 15px 0;
+}
+
+.rico-img-heading {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: BasicCommercial LT Roman;
+  line-height: 31px;
+  color: var(--body-background-color);
+  text-align: center;
+}
+
+.rico-img-text {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Futura Bk BT;
+  line-height: 22px;
+  color: var(--body-background-color);
+  text-align: center;
+  margin-top: 12px;
+}
+
+.journey-img-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.journey-img-title {
+  color: var(--body-background-color);
+  font-size: 21px;
+  font-weight: 400;
+  font-family: BasicCommercial LT Roman;
+}
+
+.plus-circle-icon {
+  color: #ffe600;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* NEW ARRIVALS SECTION */
+.new-arrivals-section {
+  margin-top: 150px;
+}
+
+.heading-new-arrivals {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: BasicCommercial LT Roman;
+  line-height: 44px;
+}
+
+.new-arrivals-box-content {
+  box-sizing: border-box;
+  border: 1px transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.new-arrival-img {
+  width: 100%;
+  height: auto;
+}
+
+.arrivals-product-name {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text-color);
+  margin-top: 15px;
+  font-family: Futura Bk BT;
+}
+
+.arrivals-product-price {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 17px;
+  font-family: Futura;
+  margin-top: 12px;
+}
+
+/* Service Blog Section */
+.services-blog-section {
+  margin-top: 120px;
+}
+
+.title-exclusive-services {
+  font-size: 38px;
+  font-weight: 700;
+  font-family: BasicCommercial LT Roman;
+  line-height: 41px;
+  text-align: center;
+}
+
+.exclusive-services-content {
+  box-sizing: border-box;
+  border: 1px transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.service-blog-img {
+  width: 100%;
+  height: auto;
+}
+
+.service-blog-title {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: basicCommercial LT Roman;
+  line-height: 19px;
+  margin-top: 15px;
+}
+
+.services-text {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Futura Bk BT;
+  line-height: 19px;
+  margin-top: 15px;
+}
+
+.services-action {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-color);
+  margin-top: 15px;
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  width: 100%;
+  background-color: var(--footer-background-color);
+  color: var(--body-background-color);
+  margin-top: 65px;
+}
+
+.footer-container {
+  width: 100%;
+  padding: 40px 0 40px 0;
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Footer Brand Section */
+
+.footer-brand-section {
+  width: 100%;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  font-size: 58px;
+  font-weight: 300;
+  font-family: Allogist;
+  line-height: 63px;
+}
+
+.footer-brand-help-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  font-family: var(--font-poppins);
+  margin-top: 10px;
+}
+
+.footer-contact-number {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16px;
+  font-family: var(--font-poppins);
+  margin-top: 18px;
+}
+
+/* Footer Links Section */
+.footer-links-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: var(--font-poppins);
+}
+
+.link-header {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.footer-link-list {
+  margin-top: 5px;
+}
+
+.footer-link-list ul li {
+  list-style-type: none;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+/* Footer Border Bottom */
+.footer-border-bottom {
+  border-bottom: 2px solid var(--body-background-color);
+  width: 100%;
+}
+
+.media-icon-links {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 0;
+}
+
+.media-icon-links img {
+  padding: 0 28px 0 0;
 }
