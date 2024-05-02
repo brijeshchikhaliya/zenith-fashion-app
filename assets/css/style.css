@@ -6,6 +6,7 @@
   --primory-color: #222222;
   --footer-background-color: #101010;
   --secondary-color: #4e4e4e;
+  --light-gray-color: #f6f6f6;
   --font-poppins: Poppins;
 }
 
@@ -50,6 +51,19 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--body-background-color);
+  opacity: 0;
+  animation: fade-in-up 2s ease forwards;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* NAVBAR */
@@ -104,6 +118,17 @@ body {
   font-family: Futura Bk BT;
   font-size: 15px;
   font-weight: 400;
+}
+
+.fleg-dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag-img {
+  width: 30px;
 }
 
 .header-border-bottom {
@@ -184,6 +209,13 @@ marquee .marquee-border-right {
   margin-top: 20px;
   transition: background-color 0.3s ease;
   font-family: Futura Bk BT;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.fashion-banner-description-section a:hover {
+  background-color: rgba(228, 224, 224, 0.9);
+  color: var(--text-color);
 }
 
 /* COLLECTION BANNER IMAGE */
@@ -251,6 +283,13 @@ marquee .marquee-border-right {
   font-weight: 400;
   transition: background-color 0.3s ease;
   font-family: Futura Bk BT;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.mens-button a:hover {
+  background-color: rgba(228, 224, 224, 0.9);
+  color: var(--text-color);
 }
 
 .womans-button a {
@@ -263,6 +302,13 @@ marquee .marquee-border-right {
   font-weight: 400;
   transition: background-color 0.3s ease;
   font-family: Futura Bk BT;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.womans-button a:hover {
+  background-color: rgba(228, 224, 224, 0.9);
+  color: var(--text-color);
 }
 
 .mens-button p,
@@ -306,10 +352,15 @@ marquee .marquee-border-right {
   height: auto;
 }
 
-/* Summer Collection Piicture Image */
+/* Summer Collection Picture Image */
 .collection-picture-image {
   margin-left: 70%;
   margin-top: -100%;
+  transition: transform 0.3s ease;
+}
+
+.collection-picture-image:hover {
+  transform: rotate(-50deg);
 }
 
 /* Summer Collection Description Image */
@@ -360,6 +411,8 @@ marquee .marquee-border-right {
   padding: 20px 55px 20px 15px;
   border-radius: 3px;
   font-family: Futura Bk BT;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .collection-diamond-icon {
@@ -380,6 +433,7 @@ marquee .marquee-border-right {
   font-weight: 700;
   line-height: 44px;
   font-family: BasicCommercial LT Roman;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .highlight-box-content {
@@ -415,6 +469,19 @@ marquee .marquee-border-right {
   margin-top: 12px;
 }
 
+/* CSS for medium zoom-out animation */
+.highlights-img-box {
+  overflow: hidden;
+}
+
+.highlights-img-box img {
+  transition: transform 2s ease;
+}
+
+.highlights-img-box:hover img {
+  transform: scale(0.9);
+}
+
 /* ADVERTIZE BLOG SECTION */
 .advertize-blog-section {
   width: 100%;
@@ -432,13 +499,16 @@ marquee .marquee-border-right {
 /* Fancy Summer Blog */
 
 .fancy-summer-blog-image {
+  box-sizing: border-box;
+  border: 2px transparent;
+  object-fit: cover;
   width: 100%;
   height: auto;
   margin-left: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
 }
 
 .fansy-summer-image {
@@ -459,16 +529,13 @@ marquee .marquee-border-right {
   font-family: BasicCommercial LT Roman;
   line-height: 44px;
   color: var(--body-background-color);
-}
-
-.summer-image-description {
-  margin-top: -25%;
+  margin-top: -30%;
 }
 
 .summer-blog-action {
   display: flex;
   flex-direction: row;
-  margin-top: 35px;
+  margin-top: 26px;
 }
 
 .fancy-summer-action {
@@ -480,6 +547,7 @@ marquee .marquee-border-right {
   padding: 18px 55px 18px 15px;
   border-radius: 3px;
   font-family: Futura Bk BT;
+  cursor: pointer;
 }
 
 .fancy-summer-diamond-icon {
@@ -491,9 +559,16 @@ marquee .marquee-border-right {
 
 /* Womans Day Blog */
 .womans-day-blog-image {
+  box-sizing: border-box;
+  border: 2px transparent;
+  object-fit: cover;
   width: 100%;
   height: auto;
   margin-left: -12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .womans-day-image {
@@ -514,16 +589,13 @@ marquee .marquee-border-right {
   font-family: BasicCommercial LT Roman;
   line-height: 44px;
   color: var(--body-background-color);
-}
-
-.womens-day-image-description {
-  margin-top: -25%;
+  margin-top: -30%;
 }
 
 .womens-day-blog-action {
   display: flex;
   flex-direction: row;
-  margin-top: 35px;
+  margin-top: 26px;
 }
 
 .womens-day-action {
@@ -535,6 +607,7 @@ marquee .marquee-border-right {
   padding: 18px 55px 18px 15px;
   border-radius: 3px;
   font-family: Futura Bk BT;
+  cursor: pointer;
 }
 
 .womens-day-diamond-icon {
@@ -609,6 +682,7 @@ marquee .marquee-border-right {
   padding: 18px 55px 18px 15px;
   border-radius: 3px;
   font-family: Futura Bk BT;
+  cursor: pointer;
 }
 
 .journey-blog-diamond-icon {
@@ -683,11 +757,28 @@ marquee .marquee-border-right {
   margin-top: 15px;
 }
 
-.journey-img-title {
+.amigos-img-title {
   color: var(--body-background-color);
   font-size: 21px;
   font-weight: 400;
   font-family: BasicCommercial LT Roman;
+  padding: 0 110px 0 0;
+}
+
+.winters-img-title {
+  color: var(--body-background-color);
+  font-size: 21px;
+  font-weight: 400;
+  font-family: BasicCommercial LT Roman;
+  padding: 0 110px 0 0;
+}
+
+.footwears-img-title {
+  color: var(--body-background-color);
+  font-size: 21px;
+  font-weight: 400;
+  font-family: BasicCommercial LT Roman;
+  padding: 0 85px 0 0;
 }
 
 .plus-circle-icon {
@@ -706,6 +797,7 @@ marquee .marquee-border-right {
   font-weight: 700;
   font-family: BasicCommercial LT Roman;
   line-height: 44px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .new-arrivals-box-content {
@@ -741,6 +833,19 @@ marquee .marquee-border-right {
   margin-top: 12px;
 }
 
+/* CSS for medium zoom-out animation */
+.new-arrivals-img-box {
+  overflow: hidden;
+}
+
+.new-arrivals-img-box img {
+  transition: transform 2s ease;
+}
+
+.new-arrivals-img-box:hover img {
+  transform: scale(0.9);
+}
+
 /* Service Blog Section */
 .services-blog-section {
   margin-top: 120px;
@@ -752,6 +857,7 @@ marquee .marquee-border-right {
   font-family: BasicCommercial LT Roman;
   line-height: 41px;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .exclusive-services-content {
@@ -790,6 +896,20 @@ marquee .marquee-border-right {
   font-style: italic;
   color: var(--text-color);
   margin-top: 15px;
+  cursor: pointer;
+}
+
+/* CSS for medium zoom-out animation */
+.exclusive-services-img-box {
+  overflow: hidden;
+}
+
+.exclusive-services-img-box img {
+  transition: transform 2s ease;
+}
+
+.exclusive-services-img-box:hover img {
+  transform: scale(0.9);
 }
 
 /* FOOTER SECTION */
@@ -893,4 +1013,196 @@ marquee .marquee-border-right {
 
 .media-icon-links img {
   padding: 0 28px 0 0;
+}
+/* HOME PAGE END */
+
+/* COLLCTION PAGE START */
+
+/* COLLECTIO PAGE MARQUEE */
+#collection-page-marquee {
+  background-color: var(--light-gray-color);
+}
+
+/* MENS COLLECTION HEADER */
+
+.mens-collection-header {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection-title {
+  font-size: 21px;
+  font-weight: 700;
+  font-family: BasicCommercial LT Roman;
+  line-height: 23px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.collection-help-text {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Futura Bk BT;
+  line-height: 30px;
+}
+
+/* MENS COLLECTION BANNER IMAGE */
+.mens-collection-banner {
+  margin-top: 30px;
+}
+
+.mens-collection-banner-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection-banner {
+  width: 100%;
+  height: auto;
+}
+
+/* Banner Description */
+.banner-description {
+  margin-top: -18%;
+}
+
+.banner-title {
+  font-size: 63px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 69px;
+  font-family: Futura Bk BT;
+  color: var(--body-background-color);
+}
+
+.banner-text {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 23px;
+  font-family: Futura Bk BT;
+  margin-top: 22px;
+  color: var(--body-background-color);
+}
+
+/* PRODUCT RESULT AND FILTER SECTION */
+.result-filter-product-section {
+  padding: 25px 0;
+}
+
+.result-filter-section-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-result-text {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: Futura Bk BT;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-text {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Futura Bk BT;
+  padding-right: 10px;
+}
+
+/* PRODUCT RESULT BORDER BOTTOM */
+
+.product-result-border-bottom {
+  border-bottom: 2px solid var(--text-color);
+}
+
+/* MENS COLLECTION PRODUCT LIST */
+.mens-product-list-section {
+  margin-top: 25px;
+}
+
+.mens-collection-content {
+  box-sizing: border-box;
+  border: 1px transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.mens-collection-product-img {
+  width: 100%;
+  height: auto;
+}
+
+.mens-collection-product-name {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text-color);
+  margin-top: 15px;
+  font-family: Futura Bk BT;
+}
+
+.mens-collection-product-price {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 17px;
+  font-family: Futura;
+  margin-top: 12px;
+}
+
+/* CSS for medium zoom-out animation */
+.mens-collection-img-box {
+  overflow: hidden;
+}
+
+.mens-collection-img-box img {
+  transition: transform 2s ease;
+}
+
+.mens-collection-img-box:hover img {
+  transform: scale(0.9);
+}
+
+/* PAGINATION */
+.pagination-section {
+  margin-top: 100px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pagination a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 8px 15px;
+  margin: 0 5px;
+  font-size: 20px;
+  transition: 0.3s ease-out;
+}
+
+.pagination a.active {
+  border: 2px solid var(--text-color);
+  background-color: var(--body-background-color);
+  border-radius: 3px;
+  box-shadow: 0 10px 35px 0px rgba(0, 0, 0, 0.3);
 }
