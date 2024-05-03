@@ -7,6 +7,7 @@
   --footer-background-color: #101010;
   --secondary-color: #4e4e4e;
   --light-gray-color: #f6f6f6;
+  --border-color: #d6d6d6;
   --font-poppins: Poppins;
 }
 
@@ -64,6 +65,17 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* TICK */
+#tick {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
 }
 
 /* NAVBAR */
@@ -949,6 +961,7 @@ marquee .marquee-border-right {
   font-weight: 300;
   font-family: Allogist;
   line-height: 63px;
+  cursor: pointer;
 }
 
 .footer-brand-help-text {
@@ -957,6 +970,7 @@ marquee .marquee-border-right {
   line-height: 20px;
   font-family: var(--font-poppins);
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .footer-contact-number {
@@ -965,6 +979,7 @@ marquee .marquee-border-right {
   line-height: 16px;
   font-family: var(--font-poppins);
   margin-top: 18px;
+  cursor: pointer;
 }
 
 /* Footer Links Section */
@@ -986,6 +1001,7 @@ marquee .marquee-border-right {
   font-size: 15px;
   font-weight: 700;
   line-height: 35px;
+  cursor: pointer;
 }
 
 .footer-link-list {
@@ -997,6 +1013,7 @@ marquee .marquee-border-right {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
+  cursor: pointer;
 }
 
 /* Footer Border Bottom */
@@ -1142,6 +1159,7 @@ marquee .marquee-border-right {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 .mens-collection-product-img {
@@ -1205,4 +1223,373 @@ marquee .marquee-border-right {
   background-color: var(--body-background-color);
   border-radius: 3px;
   box-shadow: 0 10px 35px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* SINGLE PRODUCT PAGE */
+
+#single-product-page-marquee {
+  background-color: var(--light-gray-color);
+}
+
+/* MARQUEE BORDER BOTTOM */
+.marquee-border-bottom {
+  border-bottom: 2px solid var(--text-color);
+  margin-top: -0.2%;
+}
+
+/* PRODUCT CATEGORY SECTION */
+.product-category-section {
+  padding: 20px 30px;
+}
+
+.product-category {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Futura Bk BT;
+  cursor: pointer;
+}
+
+/* PRODUCT CATEGORY BORDER BOTTOM */
+.category-border-bottom {
+  border-bottom: 2px solid var(--text-color);
+}
+
+/* SINGLE PRODUCT SECTION */
+
+/* Product Image */
+.single-product-section {
+  padding: 70px 0 0 0;
+}
+
+.tshirt-product-image {
+  box-sizing: border-box;
+  border: 2px transparent;
+  width: 100%;
+  height: auto;
+}
+
+.tshirt-img {
+  width: 100%;
+  height: auto;
+}
+
+.black-clothes-product-image {
+  box-sizing: border-box;
+  border: 2px transparent;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+}
+
+.black-clothes-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Product Description */
+.product-image-description {
+  padding: 40px 0 0 60px;
+}
+
+.single-product-title {
+  font-size: 34px;
+  font-weight: 400;
+  font-family: BasicCommercial LT Roman;
+  line-height: 41px;
+}
+
+.title-help-text {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Futura Bk BT;
+  line-height: 35px;
+}
+
+.single-product-price {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Futura Bk BT;
+  line-height: 23px;
+  margin-top: 20px;
+}
+
+.label-size {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: BasicCommercial LT Roman;
+  line-height: 18px;
+  margin-top: 25px;
+}
+
+.size-dropdown {
+  width: 100%;
+  margin-top: 13px;
+  padding: 14px 10px 14px 10px;
+}
+
+.size-dropdown option {
+  font-size: 16px;
+  font-family: BasicCommercial LT Roman;
+}
+
+.description-label {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: BasicCommercial LT Roman;
+  line-height: 18px;
+  margin-top: 25px;
+}
+
+.description-paragraph-first {
+  font-size: 19px;
+  font-weight: 300;
+  font-family: Futura;
+  line-height: 25px;
+  margin-top: 15px;
+  text-align: justify;
+}
+
+.description-paragraph-second {
+  font-size: 19px;
+  font-weight: 300;
+  font-family: Futura;
+  line-height: 25px;
+  margin-top: 18px;
+  text-align: justify;
+}
+
+.button-addtobag {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-add-to-bag {
+  width: 100%;
+  text-align: center;
+  padding: 19px 0;
+  margin-top: 20px;
+  background-color: var(--text-color);
+  color: var(--body-background-color);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 3px;
+}
+
+#btn-add-to-bag:hover {
+  color: var(--text-color);
+  background-color: var(--body-background-color);
+  border: 2px solid var(--text-color);
+}
+
+.button-shopnow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-shop-now {
+  width: 100%;
+  border: 2px solid var(--text-color);
+  text-align: center;
+  padding: 19px 0;
+  margin-top: 20px;
+  color: var(--text-color);
+  background-color: var(--body-background-color);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 3px;
+}
+
+#btn-shop-now:hover {
+  background-color: var(--text-color);
+  color: var(--body-background-color);
+}
+
+.button-border-bottom {
+  border-bottom: 2px solid var(--border-color);
+  margin-top: 45px;
+}
+
+.product-details-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-details {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: BasicCommercial LT Roman;
+  padding: 18px 0;
+}
+
+.product-details-border-bottom {
+  border-bottom: 2px solid var(--border-color);
+}
+
+.size-fit-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.size-and-fit {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: BasicCommercial LT Roman;
+  padding: 18px 0;
+}
+
+.size-fit-border-bottom {
+  border-bottom: 2px solid var(--border-color);
+}
+
+.product-care-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-care {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: BasicCommercial LT Roman;
+  padding: 18px 0;
+}
+
+.product-care-border-bottom {
+  border-bottom: 2px solid var(--border-color);
+}
+
+.fa-chevron-down {
+  padding-right: 18px;
+}
+
+/* PRODUCT SECTION BORDER BOTTOM */
+.product-section-border-bottom {
+  border-bottom: 2px solid #d2d2d2;
+  margin-top: 80px;
+}
+
+/* SINGLE PRODUCT HIGHLIGHTS SECTION */
+.single-product-highlights-section {
+  margin-top: 80px;
+}
+
+/* Heading Highlights */
+.single-product-highlights-heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
+  font-family: BasicCommercial LT Roman;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.single-product-highlight-box-content {
+  box-sizing: border-box;
+  border: 1px transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.single-product-highlight-img {
+  width: 100%;
+  height: auto;
+}
+
+.single-product-highlight-product-name {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text-color);
+  margin-top: 15px;
+  font-family: Futura Bk BT;
+}
+
+.single-product-highlights-product-price {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 17px;
+  font-family: Futura;
+  margin-top: 12px;
+}
+
+/* CSS for medium zoom-out animation */
+.single-product-highlights-img-box {
+  overflow: hidden;
+}
+
+.single-product-highlights-img-box img {
+  transition: transform 2s ease;
+}
+
+.single-product-highlights-img-box:hover img {
+  transform: scale(0.9);
+}
+
+/* SINGLE PRODUCT FOOTER */
+#footer-single-product {
+  margin-top: 110px;
+}
+
+/* CSS for the cart drawer modal */
+
+.cart-drawer {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  padding: 18px 20px;
+  overflow: hidden;
+}
+
+.cart-drawer.open {
+  display: block;
+}
+
+.cart-drawer-modal-box {
+  background-color: white;
+  border: 1px solid #888;
+  width: 530px;
+  height: auto;
+  margin-left: 100%;
+  margin-top: -1.2%;
+  border: 1px transparent;
+  animation: slideIn 2s forwards;
+  padding: 15px;
+}
+
+@keyframes slideIn {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 66%;
+  }
+}
+
+@keyframes slideOutToRight {
+  from {
+    margin-left: 66%;
+  }
+  to {
+    margin-left: 100%;
+  }
 }
