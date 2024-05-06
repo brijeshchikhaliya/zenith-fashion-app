@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/oneonic-grid.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <!-- Tick -->
+  <div id="tick"></div>
+
+  <!-- Main Header Start -->
+  <header class="main-header">
+    <div class="header-sticky">
+      <nav class="navbar navbar-expand-lg">
+        <div class="navbar-menu">
+          <i class="fa-solid fa-bars bars-icon"></i>
+          <!-- Logo Start -->
+          <a class="navbar-brand" href="./">
+            <p class="logo-text">Zenith</p>
+          </a>
+          <!-- Logo End -->
+
+          <!-- Navbar Menu Start -->
+          <ul class="navbar-nav" id="menu">
+            <li class="nav-items"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-items"><a href="" class="nav-link">SUMMER24</a></li>
+            <li class="nav-items"><a href="" class="nav-link">WOMAN</a></li>
+            <li class="nav-items"><a href="collections.html" class="nav-link">MAN</a></li>
+            <li class="nav-items"><a href="" class="nav-link">KIDS</a></li>
+            <li class="nav-items"><a href="" class="nav-link">EXPLORE</a></li>
+          </ul>
+
+          <ul id="menu">
+            <li class="nav-items">
+              <a href="wishlist.html"><i class="fa-regular fa-bookmark nav-link"></i></a>
+            </li>
+            <li class="nav-items">
+              <a href=""><i class="fa-solid fa-basket-shopping nav-link"></i></a>
+            </li>
+
+            <li class="nav-items">
+              <a href="javascript:void(0)" class="nav-links with-submenu has-submenu"
+                onclick="opensubmenu('currancy-submenu')" id="currancy-navlink">
+                <div class="flag-icon-navlink">
+                  <img src="assets/images/us-circle.png" alt="currency" class="us-flag-img">
+                  <p class="text-usd">USD</p>
+                </div>
+              </a>
+              <ul class="submenu" id="currancy-submenu">
+                <div class="sublinks-container" id="currancy-container">
+                  <div class="links-div" id="currancy-section">
+                    <ul class="currency-list">
+                      <li>
+                        <div class="dropdown-header">
+                          <div class="currency-header">
+                            <p class="currancy-heading">CURRENCY</p>
+                            <a href="#" class="dropdown-action"><i class="fas fa-times currency-close-icon"></i></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="currency-border-bottom"></li>
+
+                      <li>
+                        <div class="currancy-dropdown-menu">
+                          <img src="assets/images/us-circle.png" alt="currency" class="national-flag-img us-flag">
+                          <p class="currancy-name">USD</p>
+                        </div>
+                      </li>
+                      <li class="currency-border-bottom"></li>
+                      <li>
+                        <div class="currancy-dropdown-menu">
+                          <img src="assets/images/eu-circle.png" alt="currency" class="national-flag-img">
+                          <p class="currancy-name">EUR</p>
+                        </div>
+                      </li>
+                      <li class="currency-border-bottom"></li>
+                      <li>
+                        <div class="currancy-dropdown-menu">
+                          <img src="assets/images/ind.png" alt="currency" class="national-flag-img">
+                          <p class="currancy-name">IND</p>
+                        </div>
+                      </li>
+                      <li class="currency-border-bottom"></li>
+                      <li>
+                        <div class="currancy-dropdown-menu ryl-menu">
+                          <img src="assets/images/ryl.png" alt="currency" class="national-flag-img">
+                          <p class="currancy-name">RYL</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </ul>
+            </li>
+          </ul>
+          <!-- Navbar Menu End -->
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Main Header End -->
+
+  <!-- Border Bottom Start -->
+  <div class="header-border-bottom"></div>
+  <!-- Border Bottom End -->
+
+  <!-- Womens Fashion Banner Image Start -->
+  <div class="women-fashion-banner-section">
+    <div class="womens-fashion-banner-image">
+      <img src="assets/images/womans-fashion-banner.png" alt="" class="fashion-banner-image">
+
+      <div class="woman-fashion-marquee-section">
+        <div class="marquee">
+          <p id="marquee-text">Pay Securely with Apple Pay, Klarna and Cryptocurrency | Free
+            shipping and returns </p>
+        </div>
+        <div class="fashion-banner-description-section">
+          <p id="banner-title">WOMAN'S FASHION</p>
+          <a href="#" class="banner-description-link">SHOP NOW &nbsp; &#x25C8;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Womens Fashion Banner Image End -->
+
+  <!-- Collection Banner Image Start -->
+  <div class="collection-banner-section">
+    <div class="collection-banner-image">
+      <img src="assets/images/collection-banner-img.png" alt="" class="collection-image">
+
+      <div class="collection-banner-description">
+        <div class="collection-image-heading">
+          <p class="collection-banner-title">COLLECTION</p>
+        </div>
+
+        <div class="collection-banner-links">
+          <div class="mens-button">
+            <a href="#" class="banner-description-link">FOR MEN</a>
+            <p class="diamond-icon"> &#9672;</p>
+          </div>
+
+          <div class="womans-button">
+            <a href="#" class="banner-description-link">FOR WOMAN</a>
+            <p class="diamond-icon">&#9672;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Collection Banner Image End -->
+
+  <!-- Summer Deals Marquee Start -->
+  <div class="summer-deals-marquee-section">
+    <div class="summer-deals-marquee">
+      <p id="summer-deals-marquee-text">SUMMER DEALS !!!
+        <img src="assets/images/vector-fill.png" alt="" class="vector-fill">
+        <img src="assets/images/summer-bordered-text.png" alt="" class="summer-bordered-text">
+        <img src="assets/images/vector-normal.png" alt="" class="vector-bordered">
+      </p>
+    </div>
+  </div>
+
+  <!-- Summer Deals Marquee End -->
+
+  <!-- Summer Collection Section Start -->
+  <div class="summer-collection-section">
+    <div class="osr-container">
+      <div class="osr-row">
+        <div class="osr-col-lg-6 osr-col-md-6">
+          <div class="summer-collection-image-box">
+            <div class="summer-collection-content">
+              <img src="assets/images/summer-collection-img.png" alt="" class="summer-collection-img">
+              <div class="collection-picture-image">
+                <img src="assets/images/collection-pictre-img.png" alt="" class="collection-picture">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="osr-col-lg-6 osr-col-md-6">
+          <div class="summer-collection-description-img-box">
+            <div class="collection-description-img-content">
+              <img src="assets/images/collection-rectengle-img.png" alt="" class="summer-collection-desc-img">
+            </div>
+          </div>
+
+          <div class="summer-collection-description">
+            <h2 class="collection-desc-title">The zenith collections by summer and halloeen</h2>
+            <p class="collection-desc-text">The intimate yachts of The Ritz-Carlton Yacht Collection fuse the
+              residential feel and legendary service of The Ritz Carlton With untethered freedom.</p>
+
+            <div class="collection-desc-link">
+              <a href="#" class="collection-desc-button">EXPLORE NOW</a>
+              <p class="collection-diamond-icon">&#9672;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Summer Collection Section End -->
+
+  <!-- Highlights Product Image Start -->
+  <div class="highlights-products-section">
+    <div class="osr-container">
+      <h2 class="heading-highlights">Highlights</h2>
+      <div class="osr-row">
+        <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
+          <div class="highlights-img-box">
+            <div class="highlight-box-content">
+              <img src="assets/images/tshirt-white.png" alt="" class="highlight-product-img">
+              <p class="highlight-product-name">RANGED HOODED JACKET</p>
+              <P class="highlights-product-price">$259.00</P>
+            </div>
+          </div>
+        </div>
+
+        <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
+          <div class="highlights-img-box">
+            <div class="highlight-box-content">
+              <img src="assets/images/black-clothes.png" alt="" class="highlight-product-img">
+              <p class="highlight-product-name">OVERSIZED BAGGY PANTS</p>
+              <P class="highlights-product-price">$259.00</P>
+            </div>
+          </div>
+        </div>
+
+        <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
+          <div class="highlights-img-box">
+            <div class="highlight-box-content">
+              <img src="assets/images/premium-clothes.png" alt="" class="highlight-product-img">
+              <p class="highlight-product-name">SEED ROOTS PREMIUM CLOTHES</p>
+              <P class="highlights-product-price">$259.00</P>
+            </div>
+          </div>
+        </div>
+
+        <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
+          <div class="highlights-img-box">
+            <div class="highlight-box-content">
+              <img src="assets/images/jacket.png" alt="" class="highlight-product-img">
+              <p class="highlight-product-name">RANGED HOODED JACKET</p>
+              <P class="highlights-product-price">$259.00</P>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Highlights Product Image End -->
+
+  <!-- Advertize Blog Section Start -->
+  <div class="advertize-blog-section">
+    <div class="osr-row adv-blog-row">
+      <div class="osr-col-lg-6 osr-col-md-6 osr-col-sm-12 ">
+        <div class="fancy-summer-img-box">
+          <div class="fancy-summer-blog-image">
+            <img src="assets/images/fansy-summer-banner-img.png" alt="" class="fansy-summer-image">
+          </div>
+          <div class="summer-image-description">
+            <p class="fancy-summer-blog-title">FANCY SUMMER</p>
+            <div class="summer-blog-action">
+              <a href="#" class="fancy-summer-action">EXPLORE NOW</a>
+              <p class="fancy-summer-diamond-icon">&#9672;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="osr-col-lg-6 osr-col-md-6 osr-col-sm-12">
+        <div class="womans-day-img-box">
+          <div class="womans-day-blog-image">
+            <img src="assets/images/womans-day-banner-img.png" alt="" class="womans-day-image">
+          </div>
+          <div class="womens-day-image-description">
+            <p class="womens-day-blog-title">WOMAN'S DAY</p>
+            <div class="womens-day-blog-action">
+              <a href="#" class="womens-day-action">EXPLORE NOW</a>
+              <p class="womens-day-diamond-icon">&#9672;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Advertize Blog Section End -->
+
+  <!-- Life Time Journey Blog Section Start -->
+  <div class="journey-blog-section">
+    <div class="osr-container">
+      <div class="osr-row">
+        <div class="osr-col-lg-6 osr-col-md-6">
+          <div class="journey-blog-heading">
+            <p class="heading-the-journey">The Journey</p>
+            <p class="heading-journey-lifetime">OF A LIFETIME</p>
+          </div>
+        </div>
+
+        <div class="osr-col-lg-6 osr-col-md-6">
+          <div class="journey-blog-desc">
+            <p class="journey-blog-description-text">Let The Ritz-Carlton take you to the ends of the earth.<br>Discover
+              distinctive resort in the world's rarest
+              escapes <br> through Ritz-Carlton Reserve, where immersive<br> experiences and unspoiled natural splender
+              forge
+              lasting <br> connections.</p>
+            <div class="journey-blog-action">
+              <a href="#" class="journey-explore-now-button">EXPLORE NOW</a>
+              <p class="journey-blog-diamond-icon">&#9672;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="journey-blog-image-section">
+      <div class="osr-container">
+        <div class="osr-row journey-img-row">
+          <div class="osr-col-lg-5">
+            <div class="journey-img-box">
+              <div class="journey-box-content">
+                <img src="assets/images/rico-fashion.png" alt="" class="journey-rico-image journey-blog-img">
+                <div class="rico-img-description">
+                  <p class="rico-img-heading">Puerto rico fashions</p>
+                  <p class="rico-img-text">Stretching over 50 acres of a former Rockefeller estate,<br> this idyllic
+                    coastal refuge prizes
+                    stunning natural<br> surroundings and diverse culture.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="osr-col-lg-2">
+            <div class="journey-img-box">
+              <div class="journey-box-content">
+                <img src="assets/images/amigos-image.png" alt="" class="ambigos-image journey-blog-img">
+                <div class="journey-img-content">
+                  <p class="amigos-img-title">Amigos</p>
+                  <i class="bi bi-plus-circle plus-circle-icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="osr-col-lg-2">
+            <div class="journey-img-box">
+              <div class="journey-box-content">
+                <img src="assets/images/winters-img.png" alt="" class="winters-image journey-blog-img">
+                <div class="journey-img-content">
+                  <p class="winters-img-title">Winters</p>
+                  <i class="bi bi-plus-circle plus-circle-icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="osr-col-lg-2">
+            <div class="journey-img-box">
+              <div class="journey-box-content">
+                <img src="assets/images/footwear-img.png" alt="" class="footwear-image journey-blog-img">
+                <div class="journey-img-content">
+                  <p class="footwears-img-title">Footwears</p>
+                  <i class="bi bi-plus-circle plus-circle-icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Life Time Journey Blog Section End -->
+
+  <!-- More New Arrivals Start -->
+  <div class="new-arrivals-section">
+    <div class="osr-container">
+      <h2 class="heading-new-arrivals">More New Arrivals</h2>
+      <div class="osr-row">
+        <div class="osr-col-lg-3 osr-col-md-6">
+          <div class="new-arrivals-img-box">
+            <div class="new-arrivals-box-content">
+              <img src="assets/images/hooked-jacket.png" alt="" class="new-arrival-img">
+              <p class="arrivals-product-name">RANGED HOODED JACKET</p>
+              <P class="arrivals-product-price">$259.00</P>
+            </div>
+          </div>
+        </div>
+
+        <div class="osr-col-lg-3 osr-col-md-6">
+          <div class="new-arrivals-img-box">
+            <div class="new-arrivals-box-content">
+              <img src="assets/images/baggy-pants.png" alt="" class="new-arrival-img">
+              <p class="arrivals-product-name">OVERSIZED BAGGY PANTS</p>
+              <P class="arrivals-product-price">$259.00</P>
+            </div>
+          </div>
+        </div>
+
+        <div class="osr-col-lg-3 osr-col-md-6">
+          <div class="new-arrivals-img-box">
+            <div class="new-arrivals-box-content">
+              <img src="assets/images/seed-roots-clothes.png" alt="" class="new-arrival-img">
+              <p class="arrivals-product-name">SEED ROOTS PREMIUM CLOTHES</p>
+              <P class="arrivals-product-price">$259.00</P>
+            </div>
+          </div>
+        </div>
+
+        <div class="osr-col-lg-3 osr-col-md-6">
+          <div class="new-arrivals-img-box">
+            <div class="new-arrivals-box-content">
+              <img src="assets/images/hooked-white-t-shirt.png" alt="" class="new-arrival-img">
+              <p class="arrivals-product-name">RANGED HOODED JACKET</p>
+              <P class="arrivals-product-price">$259.00</P>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="osr-row">
+        <div class="osr-col-lg-3 osr-col-md-6">
+          <div class="new-arrivals-img-box">
+            <div class="new-arrivals-box-content">
+              <img src="assets/images/ranged-jacket.png" alt="" class="new-arrival-img">
+              <p class="arrivals-product-name">RANGED HOODED JACKET</p>
+              <P class="arrivals-product-price">$259.00</P>
+            </div>
+          </div>
+        </div>
+
+        <div class="osr-col-lg-3 osr-col-md-6">
+          <div class="new-arrivals-img-box">
+            <div class="new-arrivals-box-content">
+              <img src="assets/images/oversized-pants.png" alt="" class="new-arrival-img">
+              <p class="arrivals-product-name">OVERSIZED BAGGY PANTS</p>
+              <P class="arrivals-product-price">$259.00</P>
+            </div>
+          </div>
+        </div>
+
+        <div class="osr-col-lg-3 osr-col-md-6">
+          <div class="new-arrivals-img-box">
+            <div class="new-arrivals-box-content">
+              <img src="assets/images/gray-t-shirt.png" alt="" class="new-arrival-img">
+              <p class="arrivals-product-name">SEED ROOTS PREMIUM CLOTHES</p>
+              <P class="arrivals-product-price">$259.00</P>
+            </div>
+          </div>
+        </div>
+
+        <div class="osr-col-lg-3 osr-col-md-6">
+          <div class="new-arrivals-img-box">
+            <div class="new-arrivals-box-content">
+              <img src="assets/images/blue-shirt.png" alt="" class="new-arrival-img">
+              <p class="arrivals-product-name">RANGED HOODED JACKET</p>
+              <P class="arrivals-product-price">$259.00</P>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- More New Arrivals End -->
+
+  <!-- Services Blog Section Start -->
+  <div class="services-blog-section">
+    <div class="osr-container">
+      <h2 class="title-exclusive-services">EXCLUSIVE SERVICES</h2>
+      <div class="osr-row">
+        <div class="osr-col-lg-4 osr-col-md-6">
+          <div class="exclusive-services-img-box">
+            <div class="exclusive-services-content">
+              <img src="assets/images/gray-black-tshirt.png" alt="" class="service-blog-img">
+              <p class="service-blog-title">FASHION WEEK GLAMOURS</p>
+              <p class="services-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard</p>
+              <a href="#" class="services-action">EXPLORE NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="osr-col-lg-4 osr-col-md-6">
+          <div class="exclusive-services-img-box">
+            <div class="exclusive-services-content">
+              <img src="assets/images/wooden-tshirt.png" alt="" class="service-blog-img">
+              <p class="service-blog-title">APPOIMNETES OF THE ALL CLOTH</p>
+              <p class="services-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard</p>
+              <a href="#" class="services-action">EXPLORE NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="osr-col-lg-4 osr-col-md-6">
+          <div class="exclusive-services-img-box">
+            <div class="exclusive-services-content">
+              <img src="assets/images/lucky-clothes.png" alt="" class="service-blog-img">
+              <p class="service-blog-title">CARIOK AND LUCY CLOTHS</p>
+              <p class="services-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard</p>
+              <a href="#" class="services-action">EXPLORE NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services Blog Section End -->
+
+  <!-- Footer Section -->
+  <footer class="footer" id="footer">
+    <div class="footer-content">
+      <div class="osr-container footer-container">
+        <div class="osr-row footer-row">
+          <div class="osr-col-lg-3 osr-col-md-6">
+            <div class="footer-brand-section">
+              <div class="footer-brand">
+                <p class="footer-logo">Zenith</p>
+                <p class="footer-brand-help-text">We are happy to help you with your purchases</p>
+                <p class="footer-contact-number">Call 1800-833-4488</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="osr-col-lg-9 osr-col-md-6">
+            <div class="osr-row footer-links-row">
+              <div class="osr-col-lg-2 osr-col-md-3">
+                <div class="footer-links-aboutus footer-links">
+                  <div class="heading-footer-links">
+                    <p class="link-header">ABOUT US</p>
+                  </div>
+                  <div class="footer-link-list">
+                    <ul>
+                      <li>The Collective</li>
+                      <li>Careers</li>
+                      <li>Feedback</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="osr-col-lg-2.5 osr-col-md-3">
+                <div class="footer-links-online-shopping footer-links">
+                  <div class="heading-footer-links">
+                    <p class="link-header">SHOPPING ONLINE</p>
+                  </div>
+                  <div class="footer-link-list">
+                    <ul>
+                      <li>FAQS</li>
+                      <li>Offers Terms & Condition</li>
+                      <li>Shipping Policy</li>
+                      <li>Return & Policy</li>
+                      <li>Exchange Policy</li>
+                      <li>Site map</li>
+                      <li>Terms of use</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="osr-col-lg-2.5 osr-col-md-3">
+                <div class="footer-links-custm-servces footer-links">
+                  <div class="heading-footer-links">
+                    <p class="link-header">CUSTOMER SERVICE</p>
+                  </div>
+                  <div class="footer-link-list">
+                    <ul>
+                      <li>Made to service</li>
+                      <li>Privacy & Policy</li>
+                      <li>Gift Cards</li>
+                      <li>Pesonal Shoppings</li>
+                      <li>Loyal & Condition</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="osr-col-lg-2 osr-col-md-3">
+                <div class="footer-links-store footer-links">
+                  <div class="heading-footer-links">
+                    <p class="link-header">OUR STORES</p>
+                  </div>
+                  <div class="footer-link-list">
+                    <ul>
+                      <li>Store Locators</li>
+                      <li>Brand Directory</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-border-bottom"></div>
+      <div class="osr-container footer-bottom">
+        <div class="media-icon-links">
+          <img src="assets/images/icon-insta.png" alt="instagram-icon" class="footer-icons">
+          <img src="assets/images/icon-facebook.png" alt="facebook-icon" class="footer-icons">
+          <img src="assets/images/icon-pinterest.png" alt="pinterest-icon" class="footer-icons">
+          <img src="assets/images/icon-youtube.png" alt="youtube-icon" class="footer-icons">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <script src="assets/fontawesome-free-6.5.2-web/js/all.js"></script>
+  <script src="assets/js/show-marquee.js"></script>
+  <script src="assets/js/tick.js"></script>
+  <script src="assets/js/open-currency-link.js"></script>
+  <script src="assets/js/nav-active-class.js"></script>
+</body>
+
+</html>
