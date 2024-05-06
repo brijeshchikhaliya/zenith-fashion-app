@@ -26,6 +26,7 @@
     <div class="header-sticky">
       <nav class="navbar navbar-expand-lg">
         <div class="navbar-menu">
+          <i class="fa-solid fa-bars bars-icon"></i>
           <!-- Logo Start -->
           <a class="navbar-brand" href="./">
             <p class="logo-text">Zenith</p>
@@ -34,28 +35,76 @@
 
           <!-- Navbar Menu Start -->
           <ul class="navbar-nav" id="menu">
-            <li class="nav-items">
-              <a href="" class="nav-link">SUMMER24</a>
-            </li>
+            <li class="nav-items"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-items"><a href="" class="nav-link">SUMMER24</a></li>
             <li class="nav-items"><a href="" class="nav-link">WOMAN</a></li>
-            <li class="nav-items"><a href="" class="nav-link">MAN</a></li>
+            <li class="nav-items"><a href="collections.html" class="nav-link">MAN</a></li>
             <li class="nav-items"><a href="" class="nav-link">KIDS</a></li>
             <li class="nav-items"><a href="" class="nav-link">EXPLORE</a></li>
           </ul>
 
-          <ul>
+          <ul id="menu">
             <li class="nav-items">
-              <a href=""><i class="fa-regular fa-bookmark"></i></a>
+              <a href="wishlist.html"><i class="fa-regular fa-bookmark nav-link"></i></a>
             </li>
             <li class="nav-items">
-              <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
+              <a href=""><i class="fa-solid fa-basket-shopping nav-link"></i></a>
             </li>
 
-            <li class="nav-items fleg-dropdown">
-              <img src="assets/images/us-circle.png" alt="us-flag" class="flag-img">
-              <a href="#"> USD</a>
-            </li>
+            <li class="nav-items">
+              <a href="javascript:void(0)" class="nav-links with-submenu has-submenu"
+                onclick="opensubmenu('currancy-submenu')" id="currancy-navlink">
+                <div class="flag-icon-navlink">
+                  <img src="assets/images/us-circle.png" alt="currency" class="us-flag-img">
+                  <p class="text-usd">USD</p>
+                </div>
+              </a>
+              <ul class="submenu" id="currancy-submenu">
+                <div class="sublinks-container" id="currancy-container">
+                  <div class="links-div" id="currancy-section">
+                    <ul class="currency-list">
+                      <li>
+                        <div class="dropdown-header">
+                          <div class="currency-header">
+                            <p class="currancy-heading">CURRENCY</p>
+                            <a href="#" class="dropdown-action"><i class="fas fa-times currency-close-icon"></i></a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="currency-border-bottom"></li>
 
+                      <li>
+                        <div class="currancy-dropdown-menu">
+                          <img src="assets/images/us-circle.png" alt="currency" class="national-flag-img us-flag">
+                          <p class="currancy-name">USD</p>
+                        </div>
+                      </li>
+                      <li class="currency-border-bottom"></li>
+                      <li>
+                        <div class="currancy-dropdown-menu">
+                          <img src="assets/images/eu-circle.png" alt="currency" class="national-flag-img">
+                          <p class="currancy-name">EUR</p>
+                        </div>
+                      </li>
+                      <li class="currency-border-bottom"></li>
+                      <li>
+                        <div class="currancy-dropdown-menu">
+                          <img src="assets/images/ind.png" alt="currency" class="national-flag-img">
+                          <p class="currancy-name">IND</p>
+                        </div>
+                      </li>
+                      <li class="currency-border-bottom"></li>
+                      <li>
+                        <div class="currancy-dropdown-menu ryl-menu">
+                          <img src="assets/images/ryl.png" alt="currency" class="national-flag-img">
+                          <p class="currancy-name">RYL</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </ul>
+            </li>
           </ul>
           <!-- Navbar Menu End -->
         </div>
@@ -71,28 +120,13 @@
   <!-- Womens Fashion Banner Image Start -->
   <div class="women-fashion-banner-section">
     <div class="womens-fashion-banner-image">
-      <img src="assets/images/womans-fashion-banner.png" alt="" class="fashion-banner-image" />
-      <div class="marquee-section">
-        <marquee behavior="scroll" direction="left" scrollamount="10">
-          <p>
-            Pay Securely with Apple Pay, Klarna and Cryptocurrency | Free
-            shipping and returns
-          </p>
+      <img src="assets/images/womans-fashion-banner.png" alt="" class="fashion-banner-image">
 
-          <p>
-            Pay Securely with Apple Pay, Klarna and Cryptocurrency | Free
-            shipping and returns
-          </p>
-          <p>
-            Pay Securely with Apple Pay, Klarna and Cryptocurrency | Free
-            shipping and returns
-          </p>
-
-          <p>
-            Pay Securely with Apple Pay, Klarna and Cryptocurrency | Free
-            shipping and returns
-          </p>
-        </marquee>
+      <div class="woman-fashion-marquee-section">
+        <div class="marquee">
+          <p id="marquee-text">Pay Securely with Apple Pay, Klarna and Cryptocurrency | Free
+            shipping and returns </p>
+        </div>
         <div class="fashion-banner-description-section">
           <p id="banner-title">WOMAN'S FASHION</p>
           <a href="#" class="banner-description-link">SHOP NOW &nbsp; &#x25C8;
@@ -106,7 +140,7 @@
   <!-- Collection Banner Image Start -->
   <div class="collection-banner-section">
     <div class="collection-banner-image">
-      <img src="assets/images/collection-banner-img.png" alt="" class="collection-image" />
+      <img src="assets/images/collection-banner-img.png" alt="" class="collection-image">
 
       <div class="collection-banner-description">
         <div class="collection-image-heading">
@@ -130,24 +164,16 @@
   <!-- Collection Banner Image End -->
 
   <!-- Summer Deals Marquee Start -->
-  <span>
-    <marquee behavior="scroll" direction="left" scrollamount="20" id="summer-deals-marquee">
-      <p>SUMMER DEALS !!! </p>
-      <img src="assets/images/vector-fill.png" alt="" class="vector-fill">
-      <img src="assets/images/summer-bordered-text.png" alt="" class="summer-bordered-text">
-      <img src="assets/images/vector-normal.png" alt="" class="vector-bordered">
+  <div class="summer-deals-marquee-section">
+    <div class="summer-deals-marquee">
+      <p id="summer-deals-marquee-text">SUMMER DEALS !!!
+        <img src="assets/images/vector-fill.png" alt="" class="vector-fill">
+        <img src="assets/images/summer-bordered-text.png" alt="" class="summer-bordered-text">
+        <img src="assets/images/vector-normal.png" alt="" class="vector-bordered">
+      </p>
+    </div>
+  </div>
 
-      <p>SUMMER DEALS !!! </p>
-      <img src="assets/images/vector-fill.png" alt="" class="vector-fill">
-      <img src="assets/images/summer-bordered-text.png" alt="" class="summer-bordered-text">
-      <img src="assets/images/vector-normal.png" alt="" class="vector-bordered">
-
-      <p>SUMMER DEALS !!! </p>
-      <img src="assets/images/vector-fill.png" alt="" class="vector-fill">
-      <img src="assets/images/summer-bordered-text.png" alt="" class="summer-bordered-text">
-      <img src="assets/images/vector-normal.png" alt="" class="vector-bordered">
-    </marquee>
-  </span>
   <!-- Summer Deals Marquee End -->
 
   <!-- Summer Collection Section Start -->
@@ -243,7 +269,7 @@
       <div class="osr-col-lg-6 osr-col-md-6 osr-col-sm-12 ">
         <div class="fancy-summer-img-box">
           <div class="fancy-summer-blog-image">
-            <img src="assets/images/fansy-summer-banner-img.png" class="fansy-summer-image">
+            <img src="assets/images/fansy-summer-banner-img.png" alt="" class="fansy-summer-image">
           </div>
           <div class="summer-image-description">
             <p class="fancy-summer-blog-title">FANCY SUMMER</p>
@@ -258,7 +284,7 @@
       <div class="osr-col-lg-6 osr-col-md-6 osr-col-sm-12">
         <div class="womans-day-img-box">
           <div class="womans-day-blog-image">
-            <img src="assets/images/womans-day-banner-img.png" class="womans-day-image">
+            <img src="assets/images/womans-day-banner-img.png" alt="" class="womans-day-image">
           </div>
           <div class="womens-day-image-description">
             <p class="womens-day-blog-title">WOMAN'S DAY</p>
@@ -323,7 +349,7 @@
                 <img src="assets/images/amigos-image.png" alt="" class="ambigos-image journey-blog-img">
                 <div class="journey-img-content">
                   <p class="amigos-img-title">Amigos</p>
-                  <p class="plus-circle-icon"> &#128930;</p>
+                  <i class="bi bi-plus-circle plus-circle-icon"></i>
                 </div>
               </div>
             </div>
@@ -335,7 +361,7 @@
                 <img src="assets/images/winters-img.png" alt="" class="winters-image journey-blog-img">
                 <div class="journey-img-content">
                   <p class="winters-img-title">Winters</p>
-                  <p class="plus-circle-icon"> &#128930;</p>
+                  <i class="bi bi-plus-circle plus-circle-icon"></i>
                 </div>
               </div>
             </div>
@@ -347,7 +373,7 @@
                 <img src="assets/images/footwear-img.png" alt="" class="footwear-image journey-blog-img">
                 <div class="journey-img-content">
                   <p class="footwears-img-title">Footwears</p>
-                  <p class="plus-circle-icon"> &#128930;</p>
+                  <i class="bi bi-plus-circle plus-circle-icon"></i>
                 </div>
               </div>
             </div>
@@ -595,6 +621,8 @@
   <script src="assets/fontawesome-free-6.5.2-web/js/all.js"></script>
   <script src="assets/js/show-marquee.js"></script>
   <script src="assets/js/tick.js"></script>
+  <script src="assets/js/open-currency-link.js"></script>
+  <script src="assets/js/nav-active-class.js"></script>
 </body>
 
 </html>
