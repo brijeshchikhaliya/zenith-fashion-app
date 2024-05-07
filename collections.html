@@ -14,6 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/oneonic-grid.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive-style.css">
     <script src='main.js'></script>
 </head>
 
@@ -26,16 +27,18 @@
         <div class="header-sticky">
             <nav class="navbar navbar-expand-lg">
                 <div class="navbar-menu">
-                    <i class="fa-solid fa-bars bars-icon"></i>
+                    <a href="#" class="toggle-button">
+                        <i class="fa-solid fa-bars" id="bars"></i>
+                    </a>
                     <!-- Logo Start -->
-                    <a class="navbar-brand" href="./">
-                        <p class="logo-text">Zenith</p>
+                    <a class="navbar-brand brand-desktop" href="./">
+                        <p class="logo-text logo-desktop">Zenith</p>
                     </a>
                     <!-- Logo End -->
 
                     <!-- Navbar Menu Start -->
-                    <ul class="navbar-nav" id="menu">
-                        <li class="nav-items"><a href="index.html" class="nav-link">Home</a></li>
+                    <ul class="navbar-nav menu-links" id="menu-links">
+                        <li class="nav-items"><a href="index.html" class="nav-link">HOME</a></li>
                         <li class="nav-items"><a href="" class="nav-link">SUMMER24</a></li>
                         <li class="nav-items"><a href="" class="nav-link">WOMAN</a></li>
                         <li class="nav-items"><a href="collections.html" class="nav-link">MAN</a></li>
@@ -43,7 +46,13 @@
                         <li class="nav-items"><a href="" class="nav-link">EXPLORE</a></li>
                     </ul>
 
-                    <ul id="menu">
+                    <!-- Logo Start -->
+                    <a class="navbar-brand brand-responsive" href="./">
+                        <p class="logo-text logo-responsive">Zenith</p>
+                    </a>
+                    <!-- Logo End -->
+
+                    <ul id="menu-icons">
                         <li class="nav-items">
                             <a href="wishlist.html"><i class="fa-regular fa-bookmark"></i></a>
                         </li>
@@ -51,63 +60,52 @@
                             <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
                         </li>
 
-                        <li class="nav-items">
-                            <a href="javascript:void(0)" class="nav-links with-submenu has-submenu"
-                                onclick="opensubmenu('currancy-submenu')" id="currancy-navlink">
-                                <div class="flag-icon-navlink">
-                                    <img src="assets/images/us-circle.png" alt="currency" class="us-flag-img">
-                                    <p class="text-usd">USD</p>
-                                </div>
-                            </a>
+                        <li class="nav-items dropdown">
+                            <div class="nav-links flag-icon-navlink" onclick="opensubmenu('currancy-submenu')"
+                                id="currancy-navlink">
+                                <img src="assets/images/us-circle.png" alt="currency" class="us-flag-img">
+                                <p class="text-usd">USD</p>
+                            </div>
                             <ul class="submenu" id="currancy-submenu">
-                                <div class="sublinks-container" id="currancy-container">
-                                    <div class="links-div" id="currancy-section">
-                                        <ul class="currency-list">
-                                            <li>
-                                                <div class="dropdown-header">
-                                                    <div class="currency-header">
-                                                        <p class="currancy-heading">CURRENCY</p>
-                                                        <a href="#" class="dropdown-action"><i
-                                                                class="fas fa-times currency-close-icon"></i></a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="currency-border-bottom"></li>
-
-                                            <li>
-                                                <div class="currancy-dropdown-menu">
-                                                    <img src="assets/images/us-circle.png" alt="currency"
-                                                        class="national-flag-img us-flag">
-                                                    <p class="currancy-name">USD</p>
-                                                </div>
-                                            </li>
-                                            <li class="currency-border-bottom"></li>
-                                            <li>
-                                                <div class="currancy-dropdown-menu">
-                                                    <img src="assets/images/eu-circle.png" alt="currency"
-                                                        class="national-flag-img">
-                                                    <p class="currancy-name">EUR</p>
-                                                </div>
-                                            </li>
-                                            <li class="currency-border-bottom"></li>
-                                            <li>
-                                                <div class="currancy-dropdown-menu">
-                                                    <img src="assets/images/ind.png" alt="currency"
-                                                        class="national-flag-img">
-                                                    <p class="currancy-name">IND</p>
-                                                </div>
-                                            </li>
-                                            <li class="currency-border-bottom"></li>
-                                            <li>
-                                                <div class="currancy-dropdown-menu ryl-menu">
-                                                    <img src="assets/images/ryl.png" alt="currency"
-                                                        class="national-flag-img">
-                                                    <p class="currancy-name">RYL</p>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                <li>
+                                    <div class="dropdown-header">
+                                        <div class="currency-header">
+                                            <p class="currancy-heading">CURRENCY</p>
+                                            <a href="#" class="dropdown-action"><i
+                                                    class="fas fa-times currency-close-icon"></i></a>
+                                        </div>
                                     </div>
-                                </div>
+                                </li>
+                                <li class="currency-border-bottom"></li>
+
+                                <li>
+                                    <div class="currancy-dropdown-menu">
+                                        <img src="assets/images/us-circle.png" alt="currency"
+                                            class="national-flag-img us-flag">
+                                        <p class="currancy-name">USD</p>
+                                    </div>
+                                </li>
+                                <li class="currency-border-bottom"></li>
+                                <li>
+                                    <div class="currancy-dropdown-menu">
+                                        <img src="assets/images/eu-circle.png" alt="currency" class="national-flag-img">
+                                        <p class="currancy-name">EUR</p>
+                                    </div>
+                                </li>
+                                <li class="currency-border-bottom"></li>
+                                <li>
+                                    <div class="currancy-dropdown-menu">
+                                        <img src="assets/images/ind.png" alt="currency" class="national-flag-img">
+                                        <p class="currancy-name">IND</p>
+                                    </div>
+                                </li>
+                                <li class="currency-border-bottom"></li>
+                                <li>
+                                    <div class="currancy-dropdown-menu ryl-menu">
+                                        <img src="assets/images/ryl.png" alt="currency" class="national-flag-img">
+                                        <p class="currancy-name">RYL</p>
+                                    </div>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -176,7 +174,7 @@
         <div class="osr-container">
             <div class="osr-row first-product-row">
                 <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/tshirt-white.png" alt="" class="mens-collection-product-img">
@@ -188,7 +186,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/black-clothes.png" alt="" class="mens-collection-product-img">
@@ -200,7 +198,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/premium-clothes.png" alt="" class="mens-collection-product-img">
@@ -212,7 +210,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/jacket.png" alt="" class="mens-collection-product-img">
@@ -226,7 +224,7 @@
 
             <div class="osr-row second-product-row">
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/hooked-jacket.png" alt="" class="mens-collection-product-img">
@@ -238,7 +236,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/baggy-pants.png" alt="" class="mens-collection-product-img">
@@ -251,7 +249,7 @@
 
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/seed-roots-clothes.png" alt=""
@@ -265,7 +263,7 @@
 
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/hooked-white-t-shirt.png" alt=""
@@ -280,7 +278,7 @@
 
             <div class="osr-row third-product-row">
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/ranged-jacket.png" alt="" class="mens-collection-product-img">
@@ -292,7 +290,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/oversized-pants.png" alt="" class="mens-collection-product-img">
@@ -304,7 +302,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/gray-t-shirt.png" alt="" class="mens-collection-product-img">
@@ -316,7 +314,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/blue-shirt.png" alt="" class="mens-collection-product-img">
@@ -330,7 +328,7 @@
 
             <div class="osr-row forth-product-row">
                 <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/tshirt-white.png" alt="" class="mens-collection-product-img">
@@ -342,7 +340,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/black-clothes.png" alt="" class="mens-collection-product-img">
@@ -354,7 +352,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/premium-clothes.png" alt="" class="mens-collection-product-img">
@@ -366,7 +364,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/jacket.png" alt="" class="mens-collection-product-img">
@@ -380,7 +378,7 @@
 
             <div class="osr-row fifth-product-row">
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/hooked-jacket.png" alt="" class="mens-collection-product-img">
@@ -392,7 +390,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/baggy-pants.png" alt="" class="mens-collection-product-img">
@@ -405,7 +403,7 @@
 
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/seed-roots-clothes.png" alt=""
@@ -419,7 +417,7 @@
 
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/hooked-white-t-shirt.png" alt=""
@@ -434,7 +432,7 @@
 
             <div class="osr-row sixth-product-row">
                 <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/tshirt-white.png" alt="" class="mens-collection-product-img">
@@ -446,7 +444,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/black-clothes.png" alt="" class="mens-collection-product-img">
@@ -458,7 +456,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/premium-clothes.png" alt="" class="mens-collection-product-img">
@@ -470,7 +468,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/jacket.png" alt="" class="mens-collection-product-img">
@@ -484,7 +482,7 @@
 
             <div class="osr-row seventh-product-row">
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/ranged-jacket.png" alt="" class="mens-collection-product-img">
@@ -496,7 +494,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/oversized-pants.png" alt="" class="mens-collection-product-img">
@@ -508,7 +506,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/gray-t-shirt.png" alt="" class="mens-collection-product-img">
@@ -520,7 +518,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/blue-shirt.png" alt="" class="mens-collection-product-img">
@@ -534,7 +532,7 @@
 
             <div class="osr-row eighth-product-row">
                 <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/tshirt-white.png" alt="" class="mens-collection-product-img">
@@ -546,7 +544,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/black-clothes.png" alt="" class="mens-collection-product-img">
@@ -558,7 +556,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/premium-clothes.png" alt="" class="mens-collection-product-img">
@@ -570,7 +568,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/jacket.png" alt="" class="mens-collection-product-img">
@@ -584,7 +582,7 @@
 
             <div class="osr-row nineth-product-row">
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/hooked-jacket.png" alt="" class="mens-collection-product-img">
@@ -596,7 +594,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/baggy-pants.png" alt="" class="mens-collection-product-img">
@@ -609,7 +607,7 @@
 
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/seed-roots-clothes.png" alt=""
@@ -623,7 +621,7 @@
 
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/hooked-white-t-shirt.png" alt=""
@@ -638,7 +636,7 @@
 
             <div class="osr-row tenth-product-row">
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/ranged-jacket.png" alt="" class="mens-collection-product-img">
@@ -650,7 +648,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/oversized-pants.png" alt="" class="mens-collection-product-img">
@@ -662,7 +660,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/gray-t-shirt.png" alt="" class="mens-collection-product-img">
@@ -674,7 +672,7 @@
                 </div>
 
                 <div class="osr-col-lg-3 osr-col-md-6">
-                    <a href="singleproduct.html">
+                    <a href="singleproduct.html" class="collections-box">
                         <div class="mens-collection-img-box">
                             <div class="mens-collection-content">
                                 <img src="assets/images/blue-shirt.png" alt="" class="mens-collection-product-img">

@@ -96,7 +96,7 @@ body {
   cursor: pointer;
 }
 
-.bars-icon {
+.toggle-button {
   display: none;
 }
 
@@ -111,6 +111,10 @@ body {
   text-decoration: none;
 }
 
+.logo-responsive {
+  display: none;
+}
+
 .navbar-brand .logo-text {
   font-size: 30px;
   font-weight: 300;
@@ -118,10 +122,17 @@ body {
   font-family: Allogist;
 }
 
-.navbar-menu #menu {
+.navbar-menu #menu-links {
   margin: 0;
   padding: 0;
   display: flex;
+}
+
+.navbar-menu #menu-icons {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: 10px;
 }
 
 .navbar-menu li {
@@ -141,8 +152,8 @@ body {
 /* Currency Menu */
 .submenu {
   position: absolute;
-  margin-top: -2%;
-  margin-left: -15%;
+  margin-top: -1.5%;
+  margin-left: -18.5%;
   width: max-content;
   display: none;
   list-style: none;
@@ -155,6 +166,7 @@ body {
   transform: translateY(9%);
   background-color: #fff;
   width: 23%;
+  list-style: none;
 }
 
 .flag-icon-navlink {
@@ -162,14 +174,17 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: -5px;
+}
+
+.flag-icon-navlink p {
+  text-decoration: none;
+  color: var(--text-color);
+  margin-left: 5px;
 }
 
 .us-flag-img {
   width: 30px;
-}
-
-.text-usd {
-  padding: 0 10px;
 }
 
 .currency-header {
@@ -191,11 +206,7 @@ body {
   margin-left: 175px;
 }
 
-.currency-list {
-  list-style: none;
-}
-
-.currency-list li {
+#currancy-submenu li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -585,20 +596,20 @@ body {
 }
 
 .highlight-product-name {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: var(--text-color);
-  margin-top: 15px;
+  margin-top: 13px;
   font-family: Futura Bk BT;
 }
 
 .highlights-product-price {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 17px;
   font-family: Futura;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 /* CSS for medium zoom-out animation */
@@ -914,9 +925,8 @@ body {
 }
 
 .plus-circle-icon {
-  color: #ffe600;
-  font-size: 15px;
-  font-weight: 400;
+  color: yellow;
+  font-size: 21px;
 }
 
 /* NEW ARRIVALS SECTION */
@@ -949,7 +959,7 @@ body {
 }
 
 .arrivals-product-name {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: var(--text-color);
@@ -958,11 +968,11 @@ body {
 }
 
 .arrivals-product-price {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 17px;
   font-family: Futura;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 /* CSS for medium zoom-out animation */
@@ -1153,9 +1163,9 @@ body {
 }
 /* HOME PAGE END */
 
-/* COLLCTION PAGE START */
+/* MENS COLLCTION PAGE START */
 
-/* COLLECTIO PAGE MARQUEE */
+/* MENS COLLECTION PAGE MARQUEE */
 .collections-marquee-section {
   position: relative;
 }
@@ -1301,6 +1311,11 @@ body {
   margin-top: 25px;
 }
 
+.collections-box {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 .mens-collection-content {
   box-sizing: border-box;
   border: 1px transparent;
@@ -1319,7 +1334,7 @@ body {
 }
 
 .mens-collection-product-name {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: var(--text-color);
@@ -1328,11 +1343,11 @@ body {
 }
 
 .mens-collection-product-price {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 17px;
   font-family: Futura;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 /* CSS for medium zoom-out animation */
@@ -1693,7 +1708,7 @@ body {
 }
 
 .single-product-highlight-product-name {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: var(--text-color);
@@ -1702,11 +1717,11 @@ body {
 }
 
 .single-product-highlights-product-price {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 17px;
   font-family: Futura;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 /* CSS for medium zoom-out animation */
@@ -1727,7 +1742,7 @@ body {
   margin-top: 110px;
 }
 
-/* CSS for the cart drawer modal */
+/* Cart Drawer Modal CSS */
 
 .cart-drawer {
   position: fixed;
@@ -2062,35 +2077,41 @@ body {
   margin-top: 70px;
 }
 
-thead th {
+.checkout-table-thead th {
   font-size: 21px;
   font-weight: 700;
   font-family: BasicCommercial LT Roman;
 }
 
-thead .product {
-  padding: 20px 450px 20px 0;
-  border-bottom: 2px solid #acacac;
+.checkout-table {
+  border-collapse: collapse;
+  width: 100%;
+  cursor: pointer;
+}
+
+.checkout-table-row {
+  border-bottom: 1px solid #acacac;
 }
 
 thead .quantity {
-  padding: 20px 170px 20px 170px;
   position: relative;
   z-index: 1;
 }
 
 thead .total {
-  padding: 20px 125px 20px 125px;
   position: relative;
   z-index: 1;
+  font-family: BasicCommercial LT Roman;
+  font-size: 21px;
 }
+
+/* Product Image Data */
 
 .product-image-data {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 25px;
 }
 
 .checkout-table-product-img {
@@ -2121,15 +2142,27 @@ thead .total {
   margin-top: 10px;
 }
 
-.table-border-box {
+.qty-table-border-box {
   box-sizing: border-box;
   border: 2px solid #f3f3f3;
-  width: 50%;
-  height: 15%;
+  width: 35%;
+  height: 17%;
   position: absolute;
-  margin-left: 37%;
+  margin-left: -21%;
   background-color: #f3f3f3;
   border-radius: 3px;
+}
+
+.total-table-border-box {
+  box-sizing: border-box;
+  border: 2px solid #f3f3f3;
+  width: 38.9%;
+  height: 17%;
+  position: absolute;
+  margin-left: -21%;
+  background-color: #f3f3f3;
+  border-radius: 3px;
+  margin-top: -4%;
 }
 
 .table-box-content {
@@ -2139,6 +2172,7 @@ thead .total {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 30% 0 50% 10%;
 }
 
 .fa-minus {
@@ -2171,17 +2205,13 @@ thead .total {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 25% 0 50% 50%;
 }
 
 .total {
   font-size: 19px;
   font-weight: 400;
   font-family: Futura Bk BT;
-}
-
-.table-border-bottom {
-  border-bottom: 2px solid #acacac;
-  margin-top: 23px;
 }
 
 /* TOTAL BOX */
@@ -2210,13 +2240,13 @@ thead .total {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 25px;
+  font-weight: 600;
   font-family: Inter;
 }
 
 .help-text {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
   font-family: Inter;
   margin-top: 15px;
@@ -2232,7 +2262,7 @@ thead .total {
   color: var(--body-background-color);
   text-decoration: none;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 7px;
   font-family: Inter;
 }
@@ -2412,7 +2442,7 @@ thead th {
 }
 
 .wishlist-product-name {
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 400;
   font-family: Futura Md BT;
 }
@@ -2425,12 +2455,14 @@ thead th {
   font-size: 16px;
   font-weight: 400;
   font-family: Futura Bk BT;
+  margin-top: 8px;
 }
 
 .wishlist-product-size {
   font-size: 16px;
   font-weight: 400;
   font-family: Futura Bk BT;
+  margin-top: 8px;
 }
 
 /* Table Product Quantity */
@@ -2447,14 +2479,15 @@ thead th {
   padding: 11px;
   border-radius: 8px;
   margin-right: 7px;
+  font-size: 13px;
 }
 
 .wishlist-product-quantity {
   background-color: #d9d9d9;
-  padding: 8.5px 45px;
+  padding: 11px 45px;
   border-radius: 8px;
   font-family: inter;
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 700;
 }
 
@@ -2463,6 +2496,7 @@ thead th {
   padding: 11px;
   border-radius: 8px;
   margin-left: 7px;
+  font-size: 13px;
 }
 
 .product-total-data {
@@ -2476,6 +2510,8 @@ thead th {
   margin-top: 10px;
 }
 
+/* Wishlist Table Add To Cart Button */
+
 .whishlist-table-action {
   margin-top: 10px;
 }
@@ -2484,7 +2520,7 @@ thead th {
   border: 2px solid var(--text-color);
   background-color: var(--text-color);
   color: var(--body-background-color);
-  padding: 12px 40px 12px 40px;
+  padding: 12px 30px 12px 30px;
   text-decoration: none;
   font-size: 12px;
   font-weight: 700;
@@ -2533,7 +2569,7 @@ thead th {
 }
 
 .wishlist-highlight-product-name {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: var(--text-color);
@@ -2542,11 +2578,11 @@ thead th {
 }
 
 .wishlist-highlights-product-price {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 17px;
   font-family: Futura;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 /* CSS for medium zoom-out animation */
