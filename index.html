@@ -12,6 +12,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="assets/css/oneonic-grid.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive-style.css">
@@ -28,8 +30,11 @@
       <nav class="navbar navbar-expand-lg">
         <div class="navbar-menu">
           <a href="#" class="toggle-button">
-            <i class="fa-solid fa-bars" id="bars"></i>
+            <i class="fa-solid fa-bars bars-icon" id="bars-icon"></i>
           </a>
+
+          <a href="#" class="search-link"><i class="fas fa-search search-icon" id="search-icon"></i></a>
+
           <!-- Logo Start -->
           <a class="navbar-brand brand-desktop" href="./">
             <p class="logo-text logo-desktop">Zenith</p>
@@ -219,7 +224,7 @@
     <div class="osr-container">
       <h2 class="heading-highlights">Highlights</h2>
       <div class="osr-row">
-        <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
+        <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-3">
           <div class="highlights-img-box">
             <div class="highlight-box-content">
               <img src="assets/images/tshirt-white.png" alt="" class="highlight-product-img">
@@ -229,7 +234,7 @@
           </div>
         </div>
 
-        <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
+        <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-3">
           <div class="highlights-img-box">
             <div class="highlight-box-content">
               <img src="assets/images/black-clothes.png" alt="" class="highlight-product-img">
@@ -239,7 +244,7 @@
           </div>
         </div>
 
-        <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
+        <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-3">
           <div class="highlights-img-box">
             <div class="highlight-box-content">
               <img src="assets/images/premium-clothes.png" alt="" class="highlight-product-img">
@@ -249,7 +254,7 @@
           </div>
         </div>
 
-        <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
+        <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-3">
           <div class="highlights-img-box">
             <div class="highlight-box-content">
               <img src="assets/images/jacket.png" alt="" class="highlight-product-img">
@@ -329,7 +334,7 @@
     <div class="journey-blog-image-section">
       <div class="osr-container">
         <div class="osr-row journey-img-row">
-          <div class="osr-col-lg-5">
+          <div class="osr-col-lg-5 osr-col-md-5">
             <div class="journey-img-box">
               <div class="journey-box-content">
                 <img src="assets/images/rico-fashion.png" alt="" class="journey-rico-image journey-blog-img">
@@ -343,37 +348,43 @@
             </div>
           </div>
 
-          <div class="osr-col-lg-2">
+          <div class="osr-col-lg-2 osr-col-md-2">
             <div class="journey-img-box">
               <div class="journey-box-content">
                 <img src="assets/images/amigos-image.png" alt="" class="ambigos-image journey-blog-img">
                 <div class="journey-img-content">
                   <p class="amigos-img-title">Amigos</p>
-                  <i class="fa-solid fa-circle-plus plus-circle-icon"></i>
+                  <span class="material-symbols-outlined plus-circle-icon">
+                    add_circle
+                  </span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="osr-col-lg-2">
+          <div class="osr-col-lg-2 osr-col-md-2">
             <div class="journey-img-box">
               <div class="journey-box-content">
                 <img src="assets/images/winters-img.png" alt="" class="winters-image journey-blog-img">
                 <div class="journey-img-content">
                   <p class="winters-img-title">Winters</p>
-                  <i class="fa-solid fa-circle-plus plus-circle-icon"></i>
+                  <span class="material-symbols-outlined plus-circle-icon">
+                    add_circle
+                  </span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="osr-col-lg-2">
+          <div class="osr-col-lg-2 osr-col-md-2">
             <div class="journey-img-box">
               <div class="journey-box-content">
                 <img src="assets/images/footwear-img.png" alt="" class="footwear-image journey-blog-img">
                 <div class="journey-img-content">
                   <p class="footwears-img-title">Footwears</p>
-                  <i class="fa-solid fa-circle-plus plus-circle-icon"></i>
+                  <span class="material-symbols-outlined plus-circle-icon">
+                    add_circle
+                  </span>
                 </div>
               </div>
             </div>
@@ -525,19 +536,19 @@
     <div class="footer-content">
       <div class="osr-container footer-container">
         <div class="osr-row footer-row">
-          <div class="osr-col-lg-3 osr-col-md-6">
+          <div class="osr-col-lg-4">
             <div class="footer-brand-section">
               <div class="footer-brand">
                 <p class="footer-logo">Zenith</p>
-                <p class="footer-brand-help-text">We are happy to help you with your purchases</p>
+                <p class="footer-brand-help-text">We are happy to help you with your<br> purchases</p>
                 <p class="footer-contact-number">Call 1800-833-4488</p>
               </div>
             </div>
           </div>
 
-          <div class="osr-col-lg-9 osr-col-md-6">
+          <div class="osr-col-lg-8">
             <div class="osr-row footer-links-row">
-              <div class="osr-col-lg-2 osr-col-md-3">
+              <div class="osr-col-lg-2">
                 <div class="footer-links-aboutus footer-links">
                   <div class="heading-footer-links">
                     <p class="link-header">ABOUT US</p>
@@ -552,7 +563,7 @@
                 </div>
               </div>
 
-              <div class="osr-col-lg-2.5 osr-col-md-3">
+              <div class="osr-col-lg-2">
                 <div class="footer-links-online-shopping footer-links">
                   <div class="heading-footer-links">
                     <p class="link-header">SHOPPING ONLINE</p>
@@ -571,7 +582,7 @@
                 </div>
               </div>
 
-              <div class="osr-col-lg-2.5 osr-col-md-3">
+              <div class="osr-col-lg-2">
                 <div class="footer-links-custm-servces footer-links">
                   <div class="heading-footer-links">
                     <p class="link-header">CUSTOMER SERVICE</p>
@@ -588,7 +599,7 @@
                 </div>
               </div>
 
-              <div class="osr-col-lg-2 osr-col-md-3">
+              <div class="osr-col-lg-2">
                 <div class="footer-links-store footer-links">
                   <div class="heading-footer-links">
                     <p class="link-header">OUR STORES</p>
@@ -619,7 +630,6 @@
   <!-- Footer Section End -->
 
   <script src="assets/fontawesome-free-6.5.2-web/js/all.js"></script>
-  <script src="assets/js/show-marquee.js"></script>
   <script src="assets/js/tick.js"></script>
   <script src="assets/js/open-currency-link.js"></script>
   <script src="assets/js/nav-active-class.js"></script>

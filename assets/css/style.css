@@ -100,6 +100,10 @@ body {
   display: none;
 }
 
+.search-link {
+  display: none;
+}
+
 .navbar-menu {
   display: flex;
   flex-direction: row;
@@ -1147,6 +1151,7 @@ body {
 }
 
 /* Footer Border Bottom */
+
 .footer-border-bottom {
   border-bottom: 2px solid var(--body-background-color);
   width: 100%;
@@ -1672,7 +1677,7 @@ body {
 
 /* PRODUCT SECTION BORDER BOTTOM */
 .product-section-border-bottom {
-  border-bottom: 2px solid #d2d2d2;
+  border-bottom: 5px solid #d2d2d2;
   margin-top: 80px;
 }
 
@@ -2112,6 +2117,7 @@ thead .total {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  padding: 20px 0;
 }
 
 .checkout-table-product-img {
@@ -2145,21 +2151,22 @@ thead .total {
 .qty-table-border-box {
   box-sizing: border-box;
   border: 2px solid #f3f3f3;
-  width: 35%;
+  width: 18%;
   height: 17%;
   position: absolute;
-  margin-left: -21%;
+  margin-left: 1.5%;
   background-color: #f3f3f3;
   border-radius: 3px;
+  margin-top: -4%;
 }
 
 .total-table-border-box {
   box-sizing: border-box;
   border: 2px solid #f3f3f3;
-  width: 38.9%;
+  width: 18%;
   height: 17%;
   position: absolute;
-  margin-left: -21%;
+  margin-left: 19.4%;
   background-color: #f3f3f3;
   border-radius: 3px;
   margin-top: -4%;
@@ -2172,7 +2179,7 @@ thead .total {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 30% 0 50% 10%;
+  padding: 55% 0 50% 10%;
 }
 
 .fa-minus {
@@ -2205,7 +2212,7 @@ thead .total {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 25% 0 50% 50%;
+  padding: 55% 0 25% 1%;
 }
 
 .total {
@@ -2240,7 +2247,7 @@ thead .total {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
   font-family: Inter;
 }
@@ -2304,7 +2311,7 @@ thead .total {
 }
 
 .checkout-highlight-product-name {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: var(--text-color);
@@ -2313,11 +2320,11 @@ thead .total {
 }
 
 .checkout-highlights-product-price {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 17px;
   font-family: Futura;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 /* CSS for medium zoom-out animation */
@@ -2476,7 +2483,7 @@ thead th {
 
 .wishlist-qty-minus-icon {
   background-color: #d9d9d9;
-  padding: 11px;
+  padding: 12px;
   border-radius: 8px;
   margin-right: 7px;
   font-size: 13px;
@@ -2493,7 +2500,7 @@ thead th {
 
 .wishlist-qty-plus-icon {
   background-color: #d9d9d9;
-  padding: 11px;
+  padding: 12px;
   border-radius: 8px;
   margin-left: 7px;
   font-size: 13px;
@@ -2507,7 +2514,7 @@ thead th {
   font-family: Futura Bk BT;
   font-size: 19px;
   font-weight: 400;
-  margin-top: 10px;
+  margin-top: -60px;
 }
 
 /* Wishlist Table Add To Cart Button */
