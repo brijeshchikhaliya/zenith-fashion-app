@@ -1,0 +1,713 @@
+@media screen and (max-width: 1299px) {
+  /* HOME PAGE CSS */
+  /* Womans Fashion */
+  .fashion-banner-description-section {
+    margin-top: 29.2%;
+  }
+
+  /* Collection Banner Title */
+  .collection-banner-description {
+    margin-top: -12%;
+  }
+
+  /* Summer Collection Description */
+  .summer-collection-description {
+    margin-top: 25px;
+  }
+
+  .collection-desc-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .collection-desc-text {
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+
+  .collection-desc-link {
+    margin-top: 23px;
+  }
+
+  .collection-desc-button {
+    padding: 17px 55px 17px 15px;
+  }
+
+  .collection-diamond-icon {
+    margin-top: 11px;
+  }
+
+  /* Home Page Highlights */
+  .highlights-products-section {
+    margin-top: 90px;
+  }
+
+  /* Advertize Blog Section */
+  /* Summer Image Description */
+
+  .fancy-summer-blog-title {
+    font-size: 20px;
+    margin-top: -33%;
+  }
+
+  .summer-blog-action {
+    margin-top: 5px;
+  }
+
+  .fancy-summer-action {
+    font-size: 13px;
+    padding: 10px 40px 10px 10px;
+  }
+
+  .fancy-summer-diamond-icon {
+    font-size: 20px;
+    margin-top: 8px;
+    margin-left: -32px;
+  }
+
+  /* Womans Day Image Description */
+  .womens-day-blog-title {
+    font-size: 20px;
+    margin-top: -33%;
+  }
+
+  .womens-day-blog-action {
+    margin-top: 5px;
+  }
+
+  .womens-day-action {
+    font-size: 13px;
+    padding: 10px 40px 10px 10px;
+  }
+
+  .womens-day-diamond-icon {
+    font-size: 20px;
+    margin-top: 6px;
+    margin-left: -32px;
+  }
+
+  /* Life Time Journey Blog Section */
+  .journey-blog-section {
+    margin-top: 100px;
+  }
+  /* Lifetime Journey Blog Heading */
+  .heading-the-journey {
+    font-size: 48px;
+  }
+
+  .heading-journey-lifetime {
+    font-size: 48px;
+  }
+  /* Journey Blog Description */
+  .journey-blog-description-text {
+    font-size: 20px;
+  }
+
+  .journey-blog-action {
+    margin-top: 20px;
+  }
+
+  .journey-explore-now-button {
+    font-size: 13px;
+    padding: 16px 50px 16px 15px;
+  }
+
+  .journey-blog-diamond-icon {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .rico-img-description {
+    margin-top: -36%;
+  }
+
+  .amigos-img-title {
+    font-size: 20px;
+    padding: 0 55px 0 0;
+  }
+
+  .winters-img-title {
+    font-size: 20px;
+    padding: 0 55px 0 0;
+  }
+
+  .footwears-img-title {
+    font-size: 20px;
+    padding: 0 30px 0 0;
+  }
+
+  .plus-circle-icon {
+    font-size: 20px;
+  }
+
+  /* New Arrivals Section */
+  .new-arrivals-section {
+    margin-top: 90px;
+  }
+
+  /* Service Blog Section */
+  .services-blog-section {
+    margin-top: 90px;
+  }
+
+  /* MENS COLLECTION PAGE CSS */
+  /* Banner Description */
+  .banner-description {
+    margin-top: -20%;
+  }
+
+  .banner-title {
+    font-size: 55px;
+  }
+
+  .banner-text {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  /* Pagination */
+  .pagination-section {
+    margin-top: 70px;
+  }
+
+  /* SINGLE PRODUCT PAGE CSS */
+  /* Cart Drawer Modal CSS */
+
+  .cart-drawer-modal-box {
+    width: 590px;
+    margin-left: 100%;
+    margin-top: -1.8%;
+  }
+
+  @keyframes slideIn {
+    from {
+      margin-left: 100%;
+    }
+    to {
+      margin-left: 42.5%;
+    }
+  }
+
+  @keyframes slideOutToRight {
+    from {
+      margin-left: 42.5%;
+    }
+    to {
+      margin-left: 100%;
+    }
+  }
+
+  /* CHECKOUT PAGE CSS */
+  /* Checkout Table */
+
+  .checkout-table-thead th {
+    font-size: 18px;
+  }
+
+  thead .total {
+    font-size: 18px;
+  }
+
+  .qty-table-border-box {
+    width: 18%;
+    height: 15.6%;
+    margin-left: 2.6%;
+    margin-top: -4%;
+  }
+
+  .total-table-border-box {
+    width: 18%;
+    height: 15.6%;
+    margin-left: 20.6%;
+    margin-top: -4%;
+  }
+
+  .table-box-content {
+    padding: 55% 10% 50% 10%;
+  }
+
+  .fa-minus {
+    padding: 12px;
+    margin-right: 7px;
+  }
+
+  .product-quantity {
+    padding: 10px 30px;
+    font-size: 18px;
+  }
+
+  .fa-plus {
+    padding: 12px;
+    margin-left: 7px;
+  }
+
+  .product-total-data {
+    padding: 55% 0 25% 1%;
+  }
+
+  .total {
+    font-size: 19px;
+  }
+
+  /* Total Box */
+  .checkout-total-box {
+    margin-top: 80px;
+    margin-left: 66%;
+    width: 27%;
+  }
+
+  .total-box-content {
+    padding: 25px 25px 35px 25px;
+  }
+
+  .total {
+    font-size: 20px;
+  }
+
+  .help-text {
+    font-size: 17px;
+    margin-top: 15px;
+  }
+
+  .total-box-content a {
+    width: 100%;
+    padding: 15px 110px 15px 110px;
+    font-size: 14px;
+  }
+
+  /* WISHLIST PAGE CSS */
+  .wishlist-product-img {
+    width: 35%;
+  }
+
+  .wishlist-product-name br {
+    display: none;
+  }
+
+  .wishlist-save-icon {
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  /* Quantity Data */
+  .wishlist-qty-minus-icon {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .wishlist-product-quantity {
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+
+  .wishlist-qty-plus-icon {
+    padding: 12px;
+    margin-left: 7px;
+    font-size: 13px;
+  }
+
+  .product-total-data {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* Show bars icon */
+  .toggle-button {
+    display: block;
+    font-size: 25px;
+    color: var(--text-color);
+  }
+
+  /* Hide desktop logo */
+  .logo-desktop {
+    display: none;
+  }
+
+  .search-link {
+    display: block;
+    padding: 0 10% 0 0;
+    font-size: 20px;
+    color: var(--text-color);
+  }
+
+  /* Show responsive logo in center */
+  .brand-responsive {
+    padding: 0 17% 0 0;
+  }
+
+  .logo-responsive {
+    display: block;
+  }
+
+  /* Define keyframe animations */
+  @keyframes slideFromTop {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  #menu-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+
+  #menu-links li {
+    padding: 13px 0;
+  }
+
+  #menu-links li a {
+    font-size: 16px;
+  }
+
+  /* Show menu links dropdown when active */
+  #menu-links.active {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 10px 0;
+    animation-name: slideFromTop;
+  }
+
+  #menu-icons li a {
+    padding: 0 20px;
+  }
+
+  /* Womans Fashion */
+  .fashion-banner-description-section {
+    margin-top: 28.8%;
+  }
+
+  /* Collection Banner Title */
+  .collection-banner-description {
+    margin-top: -12.4%;
+  }
+
+  /* Summe Collection Section */
+  .summer-collection-section {
+    margin-top: 70px;
+  }
+
+  /* Summer Collection Picture Image */
+  .collection-picture {
+    width: 80%;
+  }
+
+  /* Summer Collection Description */
+  .summer-collection-description {
+    margin-top: 25px;
+  }
+
+  .collection-desc-title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .collection-desc-text {
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 5px;
+  }
+
+  .collection-desc-link {
+    margin-top: 15px;
+  }
+
+  .collection-desc-button {
+    font-size: 12px;
+    padding: 15px 45px 15px 15px;
+  }
+
+  .collection-diamond-icon {
+    font-size: 20px;
+    margin-top: 11px;
+    margin-left: -32px;
+  }
+
+  /* Lifetime Journey Blog Section */
+  .heading-the-journey {
+    font-size: 48px;
+    line-height: 55px;
+  }
+
+  .heading-journey-lifetime {
+    font-size: 48px;
+    line-height: 55px;
+  }
+
+  .journey-blog-description-text {
+    text-align: justify;
+  }
+
+  .journey-blog-description-text br {
+    display: none;
+  }
+
+  .journey-blog-action {
+    margin-top: 20px;
+  }
+
+  .journey-explore-now-button {
+    font-size: 15px;
+    padding: 16px 55px 16px 15px;
+  }
+
+  .journey-blog-diamond-icon {
+    font-size: 24px;
+    margin-top: 14px;
+  }
+
+  /* Journey Blog Img */
+  .journey-blog-image-section {
+    margin-top: 70px;
+  }
+
+  .rico-img-description {
+    margin-top: -50%;
+    width: 100%;
+    padding: 15px 15px;
+  }
+
+  .rico-img-heading {
+    font-size: 20px;
+    line-height: 31px;
+  }
+
+  .rico-img-text {
+    font-size: 15px;
+    line-height: 19px;
+    text-align: justify;
+    margin-top: 6px;
+  }
+
+  .rico-img-text br {
+    display: none;
+  }
+
+  .journey-img-content {
+    margin-top: 15px;
+  }
+
+  .amigos-img-title {
+    font-size: 16px;
+    padding: 0 20px 0 0;
+  }
+
+  .winters-img-title {
+    font-size: 16px;
+    padding: 0 20px 0 0;
+  }
+
+  .footwears-img-title {
+    font-size: 16px;
+    padding: 0 12px 0 0;
+  }
+
+  .plus-circle-icon {
+    color: yellow;
+    font-size: 21px;
+  }
+
+  /* COLLECTION PAGE CSS */
+  /* Banner Description */
+  .banner-description {
+    margin-top: -19%;
+  }
+
+  .banner-title {
+    font-size: 40px;
+    line-height: 30px;
+  }
+
+  .banner-text {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 22px;
+  }
+
+  /* SINGLE PRODUCT PAGE CSS */
+  /* Product Description */
+  .product-image-description {
+    padding: 0 0 0 10px;
+  }
+
+  .single-product-title {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .title-help-text {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .single-product-price {
+    font-size: 18px;
+    line-height: 15px;
+    margin-top: 12px;
+  }
+
+  .label-size {
+    font-size: 18px;
+    line-height: 14px;
+    margin-top: 23px;
+  }
+
+  .size-dropdown {
+    margin-top: 8px;
+    padding: 12px 10px 12px 10px;
+  }
+
+  .size-dropdown option {
+    font-size: 15px;
+  }
+
+  .description-label {
+    font-size: 18px;
+    line-height: 15px;
+    margin-top: 22px;
+  }
+
+  .description-paragraph-first {
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 15px;
+  }
+
+  .description-paragraph-second {
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 15px;
+  }
+
+  .button-addtobag {
+    margin-top: 16px;
+  }
+
+  #btn-add-to-bag {
+    padding: 14px 0;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  #btn-shop-now {
+    padding: 14px 0;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .button-border-bottom {
+    margin-top: 30px;
+  }
+
+  .product-details {
+    font-size: 17px;
+  }
+
+  .size-and-fit {
+    font-size: 17px;
+  }
+
+  .product-care {
+    font-size: 17px;
+  }
+
+  /* Product Section Border Bottom */
+  .product-section-border-bottom {
+    margin-top: 80px;
+  }
+
+  /* Cart Drawer Modal CSS */
+
+  .cart-drawer-modal-box {
+    width: 590px;
+    margin-left: 100%;
+    margin-top: -1.9%;
+  }
+
+  @keyframes slideIn {
+    from {
+      margin-left: 100%;
+    }
+    to {
+      margin-left: 41%;
+    }
+  }
+
+  @keyframes slideOutToRight {
+    from {
+      margin-left: 41%;
+    }
+    to {
+      margin-left: 100%;
+    }
+  }
+
+  /* CHECKOUT PAGE CSS */
+
+  .qty-table-border-box {
+    width: 25%;
+    height: 11%;
+    margin-left: 1.5%;
+    margin-top: -5%;
+  }
+
+  .total-table-border-box {
+    width: 25%;
+    height: 11%;
+    margin-left: 25.5%;
+    margin-top: -5%;
+  }
+
+  .table-box-content {
+    padding: 55% 0 50% 10%;
+  }
+
+  .fa-minus {
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 7px;
+  }
+
+  .product-quantity {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+
+  .fa-plus {
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 7px;
+  }
+
+  /* Total Box */
+  .checkout-total-box {
+    margin-top: 75px;
+    margin-left: 62%;
+    width: 35%;
+  }
+
+  .total-box-content a {
+    padding: 15px 105px 15px 110px;
+    font-size: 13px;
+  }
+
+  /* WISHLIST PAGE */
+  /* Wishlist Product Table */
+  .wishlist-product-img {
+    width: 30%;
+  }
+}
