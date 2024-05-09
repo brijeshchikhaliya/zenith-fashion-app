@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/oneonic-grid.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive-style.css">
     <script src='main.js'></script>
@@ -146,7 +147,7 @@
     <div class="single-product-section">
         <div class="osr-container">
             <div class="osr-row">
-                <div class="osr-col-lg-6 osr-col-md-6 osr-col-sm-12">
+                <div class="osr-col-lg-6 osr-col-md-6 osr-col-sm-12 large-product-column">
                     <div class="tshirt-product-img-box">
                         <div class="tshirt-product-image">
                             <img src="assets/images/large-white-tshirt.png" alt="" class="tshirt-img">
@@ -159,6 +160,32 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="side-image-column">
+                    <div class="osr-col-sm-3 side-product-row">
+                        <div class="small-tshirt-product-img-box">
+                            <div class="small-tshirt-product-image">
+                                <img src="assets/images/tshirt-white.png" alt="" class="small-tshirt-img">
+                            </div>
+                        </div>
+
+                        <div class="small-black-clothes-img-box">
+                            <div class="small-black-clothes-product-image">
+                                <img src="assets/images/black-clothes.png" alt="" class="small-black-clothes-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="osr-col-sm-3">
+                        <div class="tshirt-product-img-box">
+                            <div class="tshirt-product-image">
+                                <img src="assets/images/tshirt-white.png" alt="" class="large-tshirt-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
 
                 <div class="osr-col-lg-6 osr-col-md-6 osr-col-sm-12">
                     <div class="product-image-description">
@@ -279,19 +306,19 @@
         <div class="footer-content">
             <div class="osr-container footer-container">
                 <div class="osr-row footer-row">
-                    <div class="osr-col-lg-3">
+                    <div class="osr-col-lg-2 osr-col-md-12 osr-col-sm-12">
                         <div class="footer-brand-section">
                             <div class="footer-brand">
                                 <p class="footer-logo">Zenith</p>
-                                <p class="footer-brand-help-text">We are happy to help you with your<br> purchases</p>
+                                <p class="footer-brand-help-text">We are happy to help you with your purchases</p>
                                 <p class="footer-contact-number">Call 1800-833-4488</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="osr-col-lg-9">
+                    <div class="osr-col-lg-10 osr-col-md-12 osr-col-sm-12">
                         <div class="osr-row footer-links-row">
-                            <div class="osr-col-lg-2">
+                            <div class="osr-col-lg-2 osr-col-md-6 osr-col-sm-6">
                                 <div class="footer-links-aboutus footer-links">
                                     <div class="heading-footer-links">
                                         <p class="link-header">ABOUT US</p>
@@ -306,7 +333,7 @@
                                 </div>
                             </div>
 
-                            <div class="osr-col-lg-2.5">
+                            <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-6">
                                 <div class="footer-links-online-shopping footer-links">
                                     <div class="heading-footer-links">
                                         <p class="link-header">SHOPPING ONLINE</p>
@@ -325,7 +352,7 @@
                                 </div>
                             </div>
 
-                            <div class="osr-col-lg-2.5 ">
+                            <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-6">
                                 <div class="footer-links-custm-servces footer-links">
                                     <div class="heading-footer-links">
                                         <p class="link-header">CUSTOMER SERVICE</p>
@@ -342,7 +369,7 @@
                                 </div>
                             </div>
 
-                            <div class="osr-col-lg-2 ">
+                            <div class="osr-col-lg-2 osr-col-md-6 osr-col-sm-6">
                                 <div class="footer-links-store footer-links">
                                     <div class="heading-footer-links">
                                         <p class="link-header">OUR STORES</p>
@@ -460,6 +487,7 @@
     <!-- Cart Drawer End -->
 
     <script src="assets/fontawesome-free-6.5.2-web/js/all.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/open-currency-link.js"></script>
     <script src="assets/js/tick.js"></script>
     <script src="assets/js/open-cart-drawer.js"></script>

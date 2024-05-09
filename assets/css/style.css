@@ -574,6 +574,20 @@ body {
   margin-top: 150px;
 }
 
+.swiper {
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev {
+  width: 5px;
+}
 /* Heading Highlights */
 .heading-highlights {
   font-size: 40px;
@@ -874,7 +888,7 @@ body {
   margin-top: -25.9%;
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
-  padding: 15px 0;
+  padding: 15px 10px;
 }
 
 .rico-img-heading {
@@ -1099,16 +1113,17 @@ body {
 }
 
 .footer-brand-help-text {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 20px;
   font-family: var(--font-poppins);
   margin-top: 10px;
   cursor: pointer;
+  text-align: justify;
 }
 
 .footer-contact-number {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
   line-height: 16px;
   font-family: var(--font-poppins);
@@ -1460,6 +1475,10 @@ body {
 /* Product Image */
 .single-product-section {
   padding: 70px 0 0 0;
+}
+
+.side-image-column {
+  display: none;
 }
 
 .tshirt-product-image {
