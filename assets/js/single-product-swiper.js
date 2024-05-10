@@ -1,4 +1,4 @@
-const swiper = new Swiper(".new-arrivals-swiper", {
+const swiper = new Swiper(".single-product-swiper", {
   // Optional parameters
   loop: true,
   centeredSlides: true,

@@ -1,8 +1,8 @@
-const swiper = new Swiper(".new-arrivals-swiper", {
+const swiper = new Swiper(".swiper", {
   // Optional parameters
   loop: true,
   centeredSlides: true,
-  // pagination
+  // Navigation arrows
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

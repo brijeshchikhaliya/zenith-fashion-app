@@ -1,4 +1,4 @@
-const swiper = new Swiper(".new-arrivals-swiper", {
+const swiper = new Swiper(".service-blog-swiper", {
   // Optional parameters
   loop: true,
   centeredSlides: true,

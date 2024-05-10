@@ -145,143 +145,148 @@
 
     <!-- Wishlist Product Table Section Start -->
     <div class="wishlist-product-table-section">
-        <div class="osr-container">
-            <table class="wishlist-table">
-                <thead>
-                    <tr class="wishlist-row">
-                        <th class="heading-product">PRODUCT</th>
-                        <th class="heading-quantity">QUANTITY</th>
-                        <th class="heading-total">TOTAL</th>
-                        <th class="heading-action"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="wishlist-row">
-                        <td>
-                            <div class="wishlist-product-image-data">
-                                <img src="assets/images/checkout-product-img.png" alt="" class="wishlist-product-img">
-                                <div class="wishlist-product-description">
-                                    <div class="wishlist-product-detail">
-                                        <p class="wishlist-product-name">Digna Backless Jeans Shirts and<br> brand</p>
-                                        <i class="fa-solid fa-bookmark wishlist-save-icon"></i>
-                                    </div>
-                                    <p class="wishlist-product-color">Color - Black</p>
-                                    <p class="wishlist-product-size">Size - S</p>
+        <table class="wishlist-table">
+            <thead>
+                <tr class="wishlist-row">
+                    <th class="heading-product">PRODUCT</th>
+                    <th class="heading-quantity">QUANTITY</th>
+                    <th class="heading-total">TOTAL</th>
+                    <th class="heading-action action-heading"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="wishlist-row">
+                    <td>
+                        <div class="wishlist-product-image-data">
+                            <img src="assets/images/checkout-product-img.png" alt="" class="wishlist-product-img">
+                            <div class="wishlist-product-description">
+                                <div class="wishlist-product-detail">
+                                    <p class="wishlist-product-name">Digna Backless Jeans Shirts and<br> brand</p>
+                                    <i class="fa-solid fa-bookmark wishlist-save-icon"></i>
                                 </div>
+                                <p class="wishlist-product-color">Color - Black</p>
+                                <p class="wishlist-product-size">Size - S</p>
+                                <i class="fa-solid fa-bookmark wishlist-bookmark-icon"></i>
                             </div>
-                        </td>
+                        </div>
+                    </td>
 
-                        <td>
-                            <div class="wishlist-table-box-content">
-                                <p><i class="fa-solid fa-minus wishlist-qty-minus-icon"
-                                        onclick="updateQuantity('minus', 0)"></i></p>
-                                <p class="wishlist-product-quantity" id="quantity-0">1</p>
-                                <p><i class="fa-solid fa-plus wishlist-qty-plus-icon"
-                                        onclick="updateQuantity('plus', 0)"></i></p>
-                            </div>
-                        </td>
+                    <td>
+                        <div class="wishlist-table-box-content">
+                            <p><i class="fa-solid fa-minus wishlist-qty-minus-icon"
+                                    onclick="updateQuantity('minus', 0)"></i></p>
+                            <p class="wishlist-product-quantity" id="quantity-0">1</p>
+                            <p><i class="fa-solid fa-plus wishlist-qty-plus-icon"
+                                    onclick="updateQuantity('plus', 0)"></i></p>
+                        </div>
+                    </td>
 
-                        <td>
-                            <div class="product-total-data">
-                                <p class="total" id="total-0">$85.00</p>
-                            </div>
-                        </td>
+                    <td>
+                        <div class="product-total-data">
+                            <p class="total" id="total-0">$85.00</p>
+                        </div>
+                    </td>
 
-                        <td>
-                            <div class="whishlist-table-action">
-                                <a href="#" class="wishlist-btn-add-to-cart">ADD TO CART</a>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="wishlist-row">
-                        <td>
-                            <div class="wishlist-product-image-data">
-                                <img src="assets/images/checkout-product-img.png" alt="" class="wishlist-product-img">
-                                <div class="wishlist-product-description">
-                                    <div class="wishlist-product-detail">
-                                        <p class="wishlist-product-name">Digna Backless Jeans Shirts and<br> brand</p>
-                                        <i class="fa-solid fa-bookmark wishlist-save-icon"></i>
-                                    </div>
-                                    <p class="wishlist-product-color">Color - Black</p>
-                                    <p class="wishlist-product-size">Size - S</p>
+                    <td class="btn-add-to-cart">
+                        <div class="whishlist-table-action">
+                            <a href="#" class="wishlist-btn-add-to-cart">ADD TO CART</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="wishlist-row wishlist-table-row">
+                    <td>
+                        <div class="wishlist-product-image-data">
+                            <img src="assets/images/checkout-product-img.png" alt="" class="wishlist-product-img">
+                            <div class="wishlist-product-description">
+                                <div class="wishlist-product-detail">
+                                    <p class="wishlist-product-name">Digna Backless Jeans Shirts and<br> brand</p>
+                                    <i class="fa-solid fa-bookmark wishlist-save-icon"></i>
                                 </div>
+                                <p class="wishlist-product-color">Color - Black</p>
+                                <p class="wishlist-product-size">Size - S</p>
+                                <i class="fa-solid fa-bookmark wishlist-bookmark-icon"></i>
                             </div>
-                        </td>
+                        </div>
+                    </td>
 
-                        <td>
-                            <div class="wishlist-table-box-content">
-                                <p><i class="fa-solid fa-minus wishlist-qty-minus-icon"
-                                        onclick="updateQuantity('minus', 1)"></i></p>
-                                <p class="wishlist-product-quantity" id="quantity-1">1</p>
-                                <p><i class="fa-solid fa-plus wishlist-qty-plus-icon"
-                                        onclick="updateQuantity('plus', 1)"></i></p>
-                            </div>
-                        </td>
+                    <td>
+                        <div class="wishlist-table-box-content">
+                            <p><i class="fa-solid fa-minus wishlist-qty-minus-icon"
+                                    onclick="updateQuantity('minus', 1)"></i></p>
+                            <p class="wishlist-product-quantity" id="quantity-1">1</p>
+                            <p><i class="fa-solid fa-plus wishlist-qty-plus-icon"
+                                    onclick="updateQuantity('plus', 1)"></i></p>
+                        </div>
+                    </td>
 
-                        <td>
-                            <div class="product-total-data">
-                                <p class="total" id="total-1">$85.00</p>
-                            </div>
-                        </td>
+                    <td>
+                        <div class="product-total-data">
+                            <p class="total" id="total-1">$85.00</p>
+                        </div>
+                    </td>
 
-                        <td>
-                            <div class="whishlist-table-action">
-                                <a href="#" class="wishlist-btn-add-to-cart">ADD TO CART</a>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                    <td class="btn-add-to-cart">
+                        <div class="whishlist-table-action">
+                            <a href="#" class="wishlist-btn-add-to-cart">ADD TO CART</a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <!-- Wishlist Product Table Section Start -->
-
+    <div class="whishlist-add-to-cart-action">
+        <a href="#" class="add-to-cart-wishlist">ADD TO CART (1) Item</a>
+    </div>
 
 
     <!-- Wishlist Highlights Section Start -->
     <div class="wishlist-highlights-section">
         <div class="osr-container">
             <h2 class="wishlist-highlights-heading">Highlights</h2>
-            <div class="osr-row">
-                <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <div class="wishlist-highlights-img-box">
-                        <div class="wishlist-highlight-box-content">
-                            <img src="assets/images/tshirt-white.png" alt="" class="wishlist-highlight-img">
-                            <p class="wishlist-highlight-product-name">RANGED HOODED JACKET</p>
-                            <P class="wishlist-highlights-product-price">$259.00</P>
+            <div class="swiper wishlist-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="wishlist-highlights-img-box">
+                            <div class="wishlist-highlight-box-content">
+                                <img src="assets/images/tshirt-white.png" alt="" class="wishlist-highlight-img">
+                                <p class="wishlist-highlight-product-name">RANGED HOODED JACKET</p>
+                                <P class="wishlist-highlights-product-price">$259.00</P>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <div class="wishlist-highlights-img-box">
-                        <div class="wishlist-highlight-box-content">
-                            <img src="assets/images/black-clothes.png" alt="" class="wishlist-highlight-img">
-                            <p class="wishlist-highlight-product-name">OVERSIZED BAGGY PANTS</p>
-                            <P class="wishlist-highlights-product-price">$259.00</P>
+                    <div class="swiper-slide">
+                        <div class="wishlist-highlights-img-box">
+                            <div class="wishlist-highlight-box-content">
+                                <img src="assets/images/black-clothes.png" alt="" class="wishlist-highlight-img">
+                                <p class="wishlist-highlight-product-name">OVERSIZED BAGGY PANTS</p>
+                                <P class="wishlist-highlights-product-price">$259.00</P>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <div class="wishlist-highlights-img-box">
-                        <div class="wishlist-highlight-box-content">
-                            <img src="assets/images/premium-clothes.png" alt="" class="wishlist-highlight-img">
-                            <p class="wishlist-highlight-product-name">SEED ROOTS PREMIUM CLOTHES</p>
-                            <P class="wishlist-highlights-product-price">$259.00</P>
+                    <div class="swiper-slide">
+                        <div class="wishlist-highlights-img-box">
+                            <div class="wishlist-highlight-box-content">
+                                <img src="assets/images/premium-clothes.png" alt="" class="wishlist-highlight-img">
+                                <p class="wishlist-highlight-product-name">SEED ROOTS PREMIUM CLOTHES</p>
+                                <P class="wishlist-highlights-product-price">$259.00</P>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="osr-col-lg-3 osr-col-md-6 osr-col-sm-12">
-                    <div class="wishlist-highlights-img-box">
-                        <div class="wishlist-highlight-box-content">
-                            <img src="assets/images/jacket.png" alt="" class="wishlist-highlight-img">
-                            <p class="wishlist-highlight-product-name">RANGED HOODED JACKET</p>
-                            <P class="wishlist-highlights-product-price">$259.00</P>
+                    <div class="swiper-slide">
+                        <div class="wishlist-highlights-img-box">
+                            <div class="wishlist-highlight-box-content">
+                                <img src="assets/images/jacket.png" alt="" class="wishlist-highlight-img">
+                                <p class="wishlist-highlight-product-name">RANGED HOODED JACKET</p>
+                                <P class="wishlist-highlights-product-price">$259.00</P>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
@@ -391,6 +396,7 @@
     <script src="assets/js/tick.js"></script>
     <script src="assets/js/wishlist-change-qty.js"></script>
     <script src="assets/js/responsive-navbar.js"></script>
+    <script src="assets/js/wishlist-swiper.js"></script>
 </body>
 
 </html>
