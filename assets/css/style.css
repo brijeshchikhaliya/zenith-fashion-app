@@ -572,6 +572,7 @@ body {
 /* HIGHLIGHTS PRODUCT SECTION */
 .highlights-products-section {
   margin-top: 150px;
+  padding: 0 7% 0 7%;
 }
 
 .swiper {
@@ -679,7 +680,7 @@ body {
   box-sizing: border-box;
   border: 2px transparent;
   object-fit: cover;
-  width: 100%;
+  width: 100.5%;
   height: auto;
   margin-left: 12px;
   display: flex;
@@ -797,7 +798,6 @@ body {
 /* LIFETIME JOURNEY BLOG SECTION */
 .journey-blog-section {
   width: 100%;
-  margin-top: 200px;
   background-color: var(--primory-color);
   padding: 70px 0;
 }
@@ -966,6 +966,7 @@ body {
 /* NEW ARRIVALS SECTION */
 .new-arrivals-section {
   margin-top: 150px;
+  padding: 0 7% 0 7%;
 }
 
 .new-arrivals-swiper {
@@ -1128,7 +1129,7 @@ body {
 
 .footer-container {
   width: 100%;
-  padding: 40px 0 40px 0;
+  padding: 7% 4% 7% 4%;
 }
 
 .footer-row {
@@ -1748,6 +1749,7 @@ body {
 /* SINGLE PRODUCT HIGHLIGHTS SECTION */
 .single-product-highlights-section {
   margin-top: 80px;
+  padding: 0 7% 0 7%;
 }
 
 /* Heading Highlights */
@@ -2157,6 +2159,7 @@ body {
 /* CHECKOUT PRODUCT TABLE */
 .checkout-product-table-section {
   margin-top: 70px;
+  padding: 0 7% 0 7%;
 }
 
 .checkout-table-thead th {
@@ -2297,7 +2300,7 @@ thead .total {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 80% 0 25% 1%;
+  padding: 107% 0 25% 1%;
 }
 
 .total {
@@ -2349,7 +2352,7 @@ thead .total {
   width: 100%;
   border: 2px solid var(--text-color);
   text-align: center;
-  padding: 15px 122px 15px 122px;
+  padding: 4% 35% 4% 40%;
   background-color: var(--text-color);
   color: var(--body-background-color);
   text-decoration: none;
@@ -2367,6 +2370,7 @@ thead .total {
 /* CHECKOUT PAGE HIGHLIGHTS */
 .checkout-highlights-section {
   margin-top: 90px;
+  padding: 0 7% 0 7%;
 }
 
 /* Heading Highlights */
@@ -2617,7 +2621,7 @@ thead th {
   font-family: Futura Bk BT;
   font-size: 19px;
   font-weight: 400;
-  margin-top: -50%;
+  margin-top: -80%;
 }
 
 /* Wishlist Table Add To Cart Button */
@@ -2647,9 +2651,14 @@ thead th {
   box-shadow: 0 10px 45px 0px rgba(0, 0, 0, 0.3);
 }
 
+.whishlist-add-to-cart-action {
+  display: none;
+}
+
 /* WISHLIST PAGE HIGHLIGHTS */
 .wishlist-highlights-section {
   margin-top: 90px;
+  padding: 0 7% 0 7%;
 }
 
 /* Heading Highlights */
