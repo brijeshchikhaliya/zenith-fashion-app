@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Get reference to the "ADD TO BAG" button
   var addToBagBtn = document.getElementById("btn-add-to-bag");
+  var closeButton = document.getElementById("drawer-close-btn");
 
   // Function to open the cart drawer
   function openCartDrawer() {
@@ -37,5 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
         closeCartDrawer(); // Close the cart drawer if clicked outside of modal box
       }
     }
+  });
+
+  closeButton.addEventListener("click", function (event) {
+    event.stopPropagation();
+    closeCartDrawer();
   });
 });

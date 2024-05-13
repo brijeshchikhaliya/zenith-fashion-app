@@ -30,7 +30,8 @@
 
 @font-face {
   font-family: Futura Bk BT;
-  src: url("./assets/fonts/futurabkbtrusbyme_book.otf") format("opentype");
+  src: url("./assets/fonts/bitstream_-_futura_bk_bt_book-webfont.ttf")
+    format("truetype");
 }
 
 @font-face {
@@ -185,6 +186,7 @@ body {
   text-decoration: none;
   color: var(--text-color);
   margin-left: 5px;
+  font-family: Futura Bk BT;
 }
 
 .us-flag-img {
@@ -229,6 +231,10 @@ body {
   align-items: center;
   margin-top: 10px;
   padding: 0 20px 0 20px;
+}
+
+.currancy-name {
+  font-family: Futura Bk BT;
 }
 
 .ryl-menu {
@@ -310,7 +316,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 34.6%;
+  margin-top: 34.4%;
 }
 
 .fashion-banner-description-section p {
@@ -327,17 +333,12 @@ body {
   color: var(--white-color);
   background-color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
-  padding: 15.2px 25px;
-  margin-top: 20px;
+  padding: 16px 25px;
+  margin-top: 1.4%;
   transition: background-color 0.3s ease;
   font-family: Futura Bk BT;
   border-radius: 3px;
   cursor: pointer;
-}
-
-.fashion-banner-description-section a:hover {
-  background-color: rgba(228, 224, 224, 0.9);
-  color: var(--text-color);
 }
 
 /* COLLECTION BANNER IMAGE */
@@ -409,11 +410,6 @@ body {
   cursor: pointer;
 }
 
-.mens-button a:hover {
-  background-color: rgba(228, 224, 224, 0.9);
-  color: var(--text-color);
-}
-
 .womans-button a {
   margin-top: 5.7%;
   padding: 20px 55px 20px 18px;
@@ -426,11 +422,6 @@ body {
   font-family: Futura Bk BT;
   border-radius: 3px;
   cursor: pointer;
-}
-
-.womans-button a:hover {
-  background-color: rgba(228, 224, 224, 0.9);
-  color: var(--text-color);
 }
 
 .mens-button p,
@@ -607,6 +598,7 @@ body {
   margin-top: 50px;
   position: relative;
   margin-bottom: 20%;
+  cursor: pointer;
 }
 
 .highlight-product-img {
@@ -635,6 +627,11 @@ body {
 .highlight-button {
   position: absolute;
   margin-top: 77%;
+  display: none;
+}
+
+.highlights-img-box:hover .highlight-button {
+  display: block;
 }
 
 .highlights-btn-add-to-cart {
@@ -690,7 +687,7 @@ body {
 }
 
 .fansy-summer-image {
-  width: 100%;
+  width: 110%;
   height: auto;
 }
 
@@ -729,8 +726,8 @@ body {
 }
 
 .fancy-summer-diamond-icon {
-  font-size: 26px;
-  margin-top: 12px;
+  font-size: 22px;
+  margin-top: 13px;
   margin-left: -36px;
   color: var(--text-color);
 }
@@ -750,7 +747,7 @@ body {
 }
 
 .womans-day-image {
-  width: 100%;
+  width: 110%;
   height: auto;
 }
 
@@ -789,8 +786,8 @@ body {
 }
 
 .womens-day-diamond-icon {
-  font-size: 26px;
-  margin-top: 12px;
+  font-size: 22px;
+  margin-top: 13px;
   margin-left: -36px;
   color: var(--text-color);
 }
@@ -800,6 +797,7 @@ body {
   width: 100%;
   background-color: var(--primory-color);
   padding: 70px 0;
+  margin-top: -1%;
 }
 
 .journey-blog-heading {
@@ -998,6 +996,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 .new-arrivals-row-second .new-arrivals-box-content {
@@ -1042,6 +1041,7 @@ body {
 /* Service Blog Section */
 .services-blog-section {
   margin-top: 120px;
+  padding: 0 7% 0 7%;
 }
 
 .service-blog-swiper {
@@ -1073,6 +1073,7 @@ body {
   flex-direction: column;
   margin-top: 50px;
   margin-bottom: 60px;
+  cursor: pointer;
 }
 
 .service-blog-img {
@@ -1081,7 +1082,7 @@ body {
 }
 
 .service-blog-title {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   font-family: basicCommercial LT Roman;
   line-height: 25px;
@@ -1089,20 +1090,21 @@ body {
 }
 
 .services-text {
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 500;
   font-family: Futura Bk BT;
   line-height: 19px;
-  margin-top: 15px;
+  margin-top: 12px;
 }
 
 .services-action {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   font-style: italic;
   color: var(--text-color);
   margin-top: 15px;
   cursor: pointer;
+  font-family: Futura Bk BT;
 }
 
 /* CSS for medium zoom-out animation */
@@ -1221,7 +1223,8 @@ body {
 .media-icon-links {
   display: flex;
   flex-direction: row;
-  padding: 25px 0;
+  padding: 2% 7% 2% 5%;
+  cursor: pointer;
 }
 
 .media-icon-links img {
@@ -1275,10 +1278,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 7% 0 7%;
 }
 
 .collection-title {
-  font-size: 21px;
+  font-size: 25px;
   font-weight: 700;
   font-family: BasicCommercial LT Roman;
   line-height: 23px;
@@ -1286,10 +1290,11 @@ body {
 }
 
 .collection-help-text {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   font-family: Futura Bk BT;
   line-height: 30px;
+  text-align: center;
 }
 
 /* MENS COLLECTION BANNER IMAGE */
@@ -1314,6 +1319,7 @@ body {
 /* Banner Description */
 .banner-description {
   margin-top: -18%;
+  padding: 0 7% 0 7%;
 }
 
 .banner-title {
@@ -1336,7 +1342,7 @@ body {
 
 /* PRODUCT RESULT AND FILTER SECTION */
 .result-filter-product-section {
-  padding: 25px 0;
+  padding: 2% 7% 2% 7%;
 }
 
 .result-filter-section-content {
@@ -1877,9 +1883,21 @@ body {
 .cart-drawer-header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-drawer-title {
+  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   padding: 25px 25px 0 25px;
+}
+
+.drawer-close-btn {
+  padding: 26px 30px 0 0;
+  font-size: 20px;
 }
 
 .cart-drawer-border-right {
@@ -2183,7 +2201,7 @@ thead .quantity {
   z-index: 1;
 }
 
-thead .total {
+thead .total-heading {
   position: relative;
   z-index: 1;
   font-family: BasicCommercial LT Roman;
@@ -2240,7 +2258,7 @@ thead .total {
   box-sizing: border-box;
   border: 2px solid #f3f3f3;
   width: 18%;
-  height: 17%;
+  height: 15.5%;
   position: absolute;
   margin-left: 1%;
   background-color: #f3f3f3;
@@ -2252,9 +2270,9 @@ thead .total {
   box-sizing: border-box;
   border: 2px solid #f3f3f3;
   width: 18%;
-  height: 17%;
+  height: 15.5%;
   position: absolute;
-  margin-left: 18.8%;
+  margin-left: 18.9%;
   background-color: #f3f3f3;
   border-radius: 3px;
   margin-top: -4%;
@@ -2293,17 +2311,17 @@ thead .total {
   margin-left: 7px;
 }
 
-.product-total-data {
+.checkout-product-total-data {
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 107% 0 25% 1%;
+  padding: 58% 0 25% 1%;
 }
 
-.total {
+.checkout-product-total-data .total {
   font-size: 19px;
   font-weight: 400;
   font-family: Futura Bk BT;
@@ -2330,7 +2348,7 @@ thead .total {
   box-shadow: 0 10px 45px 0px rgba(0, 0, 0, 0.3);
 }
 
-.total {
+.total-box-content .total {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2552,7 +2570,7 @@ thead th {
 }
 
 .wishlist-product-name {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
   font-family: Futura Md BT;
 }
@@ -2613,7 +2631,7 @@ thead th {
   font-size: 13px;
 }
 
-.product-total-data {
+.wishlist-product-total-data {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -2621,7 +2639,7 @@ thead th {
   font-family: Futura Bk BT;
   font-size: 19px;
   font-weight: 400;
-  margin-top: -80%;
+  margin-top: 2%;
 }
 
 /* Wishlist Table Add To Cart Button */
