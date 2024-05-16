@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  border-radius: 4px;
+  box-shadow: 0 0 2px 2px rgba(155, 155, 155, 0.1);
+  border: 1px solid #d3d3d3;
+  margin-top: 3%;
+}
+
+.docs-header-section {
+  box-sizing: border-box;
+  border: 2px solid rgb(31, 30, 30);
+  background-color: rgb(31, 30, 30);
+  color: white;
+  width: 100%;
+  height: auto;
+}
+
+.docs-header {
+  text-align: center;
+  font-family: bitter;
+  font-size: 28px;
+}
+
+.docs-subheader {
+  text-align: center;
+  font-family: bitter;
+  font-size: 22px;
+  margin-top: -1%;
+}
+
+.docs-container {
+  padding: 3% 2% 3% 2%;
+}
+
+/* Docs Navbar */
+
+.documentation-content {
+  padding: 3% 4% 3% 4%;
+}
+
+.docs-nav {
+  background-color: #e9e4e4;
+  list-style: none;
+  margin: 0 0 0 20px;
+  padding: 15px 20px;
+  position: sticky;
+}
+
+.docs-nav a {
+  display: block;
+  margin: 0 -20px;
+  padding: 0 20px;
+  text-decoration: none;
+  border-right: 2px transparent;
+  font-size: 18px;
+  color: rgb(7, 7, 7);
+  line-height: 35px;
+}
+
+.docs-nav a:hover {
+  background: #222;
+  color: #fff;
+}
+
+.docs-content {
+  padding: 0 0 0 3%;
+}
+
+/* Welcome Content */
+
+.welcome-content {
+  padding: 0 0 3% 0;
+}
+
+.welcome-text {
+  font-size: 18px;
+  text-align: justify;
+  color: rgb(37, 36, 36);
+  line-height: 28px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgb(219, 218, 218);
+}
+
+/* Introduction */
+
+.introduction-content {
+  padding: 2% 0 3% 0;
+}
+
+#introduction {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.introduction-text {
+  font-size: 18px;
+  text-align: justify;
+  color: rgb(37, 36, 36);
+  line-height: 28px;
+}
+
+.introduction-content li {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* HTML Structure */
+.html-structure-content {
+  padding: 2% 0 3% 0;
+}
+
+#html-structure {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.html-text {
+  font-size: 18px;
+  text-align: justify;
+  color: rgb(37, 36, 36);
+  line-height: 28px;
+}
+
+.html-structure-content strong {
+  font-size: 18px;
+}
+
+/* Change Image */
+.change-img-content {
+  padding: 2% 0 3% 0;
+}
+
+#change-images {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.change-img-text {
+  font-size: 18px;
+  text-align: justify;
+  color: rgb(37, 36, 36);
+  line-height: 28px;
+}
+
+/* Icons */
+.icons-content {
+  padding: 2% 0 3% 0;
+}
+
+#icons {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.icons-text {
+  font-size: 18px;
+  text-align: justify;
+  color: rgb(37, 36, 36);
+  line-height: 28px;
+}
+
+/* CSS Files */
+
+.css-files-content {
+  padding: 2% 0 3% 0;
+}
+
+#css {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.css-text {
+  font-size: 18px;
+  text-align: justify;
+  color: rgb(37, 36, 36);
+  line-height: 28px;
+}
+
+/* JS Files */
+.js-content {
+  padding: 2% 0 3% 0;
+}
+
+#js {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.js-text {
+  font-size: 18px;
+  text-align: justify;
+  color: rgb(37, 36, 36);
+  line-height: 28px;
+}
+
+.note {
+  font-size: 16px;
+  text-align: justify;
+  color: rgb(252, 5, 5);
+  line-height: 24px;
+}
+
+/* Resources Used */
+.resource-content {
+  padding: 2% 0 3% 0;
+}
+
+#resources {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.resource-content p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.resource-content a {
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* Footer */
+
+footer {
+  box-sizing: border-box;
+  border: 2px solid rgb(31, 30, 30);
+  background-color: rgb(31, 30, 30);
+  color: white;
+  width: 100%;
+  height: auto;
+}
+
+footer p {
+  text-align: center;
+  font-family: bitter;
+  font-size: 18px;
+}
